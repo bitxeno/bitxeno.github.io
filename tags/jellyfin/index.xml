@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>jellyfin on bitxeno's notes</title><link>//blog.xenori.com/tags/jellyfin/</link><description>Recent content in jellyfin on bitxeno's notes</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 27 Sep 2022 11:58:08 +0800</lastBuildDate><atom:link href="//blog.xenori.com/tags/jellyfin/index.xml" rel="self" type="application/rss+xml"/><item><title>jellyfin使用经验分享</title><link>//blog.xenori.com/2022/09/jellyfin-practice/</link><pubDate>Tue, 27 Sep 2022 11:58:08 +0800</pubDate><guid>//blog.xenori.com/2022/09/jellyfin-practice/</guid><description>&lt;img src="//blog.xenori.com/2022/09/jellyfin-practice/cover.png" alt="Featured image of post jellyfin使用经验分享" />&lt;h2 id="解决我的媒体封面图中文变方块">解决我的媒体封面图中文变方块&lt;/h2>
+&lt;p>先进入docker shell，安装中文支持字体&lt;/p>
+&lt;pre tabindex="0">&lt;code>apt update
+apt install fonts-noto-cjk
+&lt;/code>&lt;/pre>&lt;p>安装后先删除旧的封面图，然后选择右下角菜单的&lt;strong>刷新元数据&lt;/strong>，这样会再次生成新的封面。&lt;/p>
+&lt;h2 id="解决实时监控没法刷新">解决实时监控没法刷新&lt;/h2>
+&lt;p>假如nas的影片很多，inotify的监控文件数会到达上限，就会出现这情况。可以在docker的host端，执行命令增大监控文件数：&lt;/p>
+&lt;pre tabindex="0">&lt;code>sysctl -w fs.inotify.max_user_watches=1048576
+&lt;/code>&lt;/pre>&lt;p>然后重启下jellyfin就可以了&lt;/p>
+&lt;h2 id="最新添加的剧集不在首页显示">最新添加的剧集不在首页显示&lt;/h2>
+&lt;p>默认是按视频文件创建时间排序的，假如视频文件创建日期太旧就会这样，可到控制台&lt;code>媒体库 -&amp;gt; 显示&lt;/code>中，把选项&lt;code>新内容加入的日期&lt;/code>改为使用扫描日期&lt;/p>
+&lt;h2 id="匹配的元数据不正确怎解决">匹配的元数据不正确怎解决？&lt;/h2>
+&lt;p>可以使用右上角的&lt;code>识别&lt;/code>功能重新匹配，假如重新匹配也不正确，可以手工修改元数据，如集号等，再使用&lt;code>刷新元数据 -&amp;gt; 搜索缺少的元数据&lt;/code>匹配缺少的元数据。&lt;/p></description></item></channel></rss>
