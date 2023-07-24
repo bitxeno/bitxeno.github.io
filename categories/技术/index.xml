@@ -777,7 +777,7 @@ print(&amp;#34;long press&amp;#34;)
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 再删除所有本地tag&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git tag &lt;span class="p">|&lt;/span> xargs git tag -d
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="commit修改">Commit修改&lt;/h2>
-&lt;h3 id="清空所有commit">清空所有commit&lt;/h3>
+&lt;h3 id="清空所有历史commit">清空所有历史commit&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 创建新的master分支&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git checkout --orphan new_master
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git add -A
@@ -798,8 +798,10 @@ print(&amp;#34;long press&amp;#34;)
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git commit -m &lt;span class="s2">&amp;#34;merge commit message&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git push
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="多帐号">多帐号&lt;/h2>
-&lt;h3 id="提交时切换新帐号">提交时切换新帐号&lt;/h3>
+&lt;h3 id="提交时提示输入帐号">提交时提示输入帐号&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">git config --local credential.helper &lt;span class="s2">&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># git地址要使用http协议&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git remote set-url origin https://xxx.com/xxx.git
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>常用adb命令</title><link>//blog.xenori.com/2020/09/adb-commands/</link><pubDate>Fri, 11 Sep 2020 11:27:10 +0800</pubDate><guid>//blog.xenori.com/2020/09/adb-commands/</guid><description>&lt;img src="//blog.xenori.com/2020/09/adb-commands/cover.png" alt="Featured image of post 常用adb命令" />&lt;h2 id="1-查看连接设备">1. 查看连接设备&lt;/h2>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl"> adb devcies
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="2-当有多个连接设备时指定执行命令的设备">2. 当有多个连接设备时，指定执行命令的设备&lt;/h2>

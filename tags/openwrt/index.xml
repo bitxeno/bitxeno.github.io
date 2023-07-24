@@ -145,9 +145,7 @@ data-flex-basis="2972px"
 &lt;h2 id="测试是否生效">测试是否生效&lt;/h2>
 &lt;p>通过curl请求bitwarden服务看有没内容返回&lt;/p>
 &lt;pre tabindex="0">&lt;code>curl https://bwrs.xxx.com
-&lt;/code>&lt;/pre></description></item><item><title>openwrt管理后台使用caddy代替uhttpd</title><link>//blog.xenori.com/2021/08/openwrt-caddy-replace-uhttpd/</link><pubDate>Wed, 11 Aug 2021 07:58:11 +0800</pubDate><guid>//blog.xenori.com/2021/08/openwrt-caddy-replace-uhttpd/</guid><description>&lt;img src="//blog.xenori.com/2021/08/openwrt-caddy-replace-uhttpd/cover.jpeg" alt="Featured image of post openwrt管理后台使用caddy代替uhttpd" />&lt;div class="notices warning" >&lt;blockquote>&lt;p>改用caddy后发现dockerman的控制台会使用不了，一直处于loading状态，暂时不知是caddy的bug，还是cgi插件的bug。。。&lt;/p>
-&lt;/blockquote>&lt;/div>
-&lt;p>openwrt管理后台默认是使用uhttpd提供服务的。一段时间体验下来发现uhttpd有时会没响应，查不到具体原因，只能重启才会恢复正常。为了稳定性和强大的反向代理功能，决定在软路由上使用caddy代替uhttpd。&lt;/p>
+&lt;/code>&lt;/pre></description></item><item><title>openwrt管理后台使用caddy代替uhttpd</title><link>//blog.xenori.com/2021/08/openwrt-caddy-replace-uhttpd/</link><pubDate>Wed, 11 Aug 2021 07:58:11 +0800</pubDate><guid>//blog.xenori.com/2021/08/openwrt-caddy-replace-uhttpd/</guid><description>&lt;img src="//blog.xenori.com/2021/08/openwrt-caddy-replace-uhttpd/cover.jpeg" alt="Featured image of post openwrt管理后台使用caddy代替uhttpd" />&lt;p>openwrt管理后台默认是使用uhttpd提供服务的。一段时间体验下来发现uhttpd有时会没响应，查不到具体原因，只能重启才会恢复正常。为了稳定性和强大的反向代理功能，决定在软路由上使用caddy代替uhttpd。&lt;/p>
 &lt;h2 id="暂停uhttpd服务">暂停uhttpd服务&lt;/h2>
 &lt;p>uhttpd服务占用了80端口，需要先暂停。使用ssh登录openwrt，执行下面命令暂停uhttpd服务：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">/etc/init.d/uhttpd stop
@@ -170,7 +168,7 @@ chmod +x /usr/bin/caddy
 &lt;/code>&lt;/pre>&lt;h2 id="配置caddy">配置caddy&lt;/h2>
 &lt;p>增加下面的配置，并放到&lt;code>/etc/caddy/Caddyfile&lt;/code>文件中：&lt;/p>
 &lt;pre tabindex="0">&lt;code>{
-order cgi last
+order cgi before respond
 }
 :80 {
 @notcgi {
@@ -183,6 +181,8 @@ root /www
 }
 cgi /cgi-bin/luci* /www/cgi-bin/luci {
 script_name /cgi-bin/luci
+# 下面这句很重要，要不然部分服务控制台会工作不正常
+unbuffered_output
 }
 }
 &lt;/code>&lt;/pre>&lt;h2 id="增加启动脚本">增加启动脚本&lt;/h2>
@@ -193,7 +193,7 @@ SERVICE_USE_PID=1
 SERVICE_WRITE_PID=1
 SERVICE_DAEMONIZE=1
 start() {
-service_start /usr/bin/caddy run -config /etc/caddy/Caddyfile
+service_start /usr/bin/caddy run --config /etc/caddy/Caddyfile
 }
 stop() {
 service_stop /usr/bin/caddy

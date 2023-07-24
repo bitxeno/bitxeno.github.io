@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>折腾 on bitxeno's notes</title><link>//blog.xenori.com/categories/%E6%8A%98%E8%85%BE/</link><description>Recent content in 折腾 on bitxeno's notes</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 27 Sep 2022 11:58:08 +0800</lastBuildDate><atom:link href="//blog.xenori.com/categories/%E6%8A%98%E8%85%BE/index.xml" rel="self" type="application/rss+xml"/><item><title>jellyfin使用经验分享</title><link>//blog.xenori.com/2022/09/jellyfin-practice/</link><pubDate>Tue, 27 Sep 2022 11:58:08 +0800</pubDate><guid>//blog.xenori.com/2022/09/jellyfin-practice/</guid><description>&lt;img src="//blog.xenori.com/2022/09/jellyfin-practice/cover.png" alt="Featured image of post jellyfin使用经验分享" />&lt;h2 id="解决我的媒体封面图中文变方块">解决我的媒体封面图中文变方块&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>折腾 on bitxeno's notes</title><link>//blog.xenori.com/categories/%E6%8A%98%E8%85%BE/</link><description>Recent content in 折腾 on bitxeno's notes</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 27 Sep 2022 11:58:08 +0800</lastBuildDate><atom:link href="//blog.xenori.com/categories/%E6%8A%98%E8%85%BE/index.xml" rel="self" type="application/rss+xml"/><item><title>jellyfin使用指南</title><link>//blog.xenori.com/2022/09/jellyfin-practice/</link><pubDate>Tue, 27 Sep 2022 11:58:08 +0800</pubDate><guid>//blog.xenori.com/2022/09/jellyfin-practice/</guid><description>&lt;img src="//blog.xenori.com/2022/09/jellyfin-practice/cover.png" alt="Featured image of post jellyfin使用指南" />&lt;h2 id="媒体文件命名规范">媒体文件命名规范&lt;/h2>
+&lt;h3 id="电影">电影&lt;/h3>
+&lt;pre tabindex="0">&lt;code>&lt;/code>&lt;/pre>&lt;h3 id="电视剧">电视剧&lt;/h3>
+&lt;pre tabindex="0">&lt;code>&lt;/code>&lt;/pre>&lt;h2 id="解决我的媒体封面图中文变方块">解决我的媒体封面图中文变方块&lt;/h2>
 &lt;p>先进入docker shell，安装中文支持字体&lt;/p>
 &lt;pre tabindex="0">&lt;code>apt update
 apt install fonts-noto-cjk
 &lt;/code>&lt;/pre>&lt;p>安装后先删除旧的封面图，然后选择右下角菜单的&lt;strong>刷新元数据&lt;/strong>，这样会再次生成新的封面。&lt;/p>
-&lt;h2 id="解决实时监控没法刷新">解决实时监控没法刷新&lt;/h2>
+&lt;h2 id="解决元数据没自动获取">解决元数据没自动获取&lt;/h2>
 &lt;p>假如nas的影片很多，inotify的监控文件数会到达上限，就会出现这情况。可以在docker的host端，执行命令增大监控文件数：&lt;/p>
 &lt;pre tabindex="0">&lt;code>sysctl -w fs.inotify.max_user_watches=1048576
 &lt;/code>&lt;/pre>&lt;p>然后重启下jellyfin就可以了&lt;/p>

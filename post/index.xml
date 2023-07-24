@@ -479,12 +479,15 @@ hugoDecrypt(userStorage.getItem(storageKey), "storage");
 &lt;/blockquote></description></item><item><title>常用ffmpeg命令</title><link>//blog.xenori.com/2022/12/ffmpeg-commands/</link><pubDate>Sat, 10 Dec 2022 11:27:10 +0800</pubDate><guid>//blog.xenori.com/2022/12/ffmpeg-commands/</guid><description>&lt;img src="//blog.xenori.com/2022/12/ffmpeg-commands/cover.png" alt="Featured image of post 常用ffmpeg命令" />&lt;h2 id="1-切割mkv并保留字幕">1. 切割mkv并保留字幕&lt;/h2>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 截取从30s开始的30s视频&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ffmpeg -ss 00:00:00 -t 00:00:30 -i input.mkv -c:v copy -c:a copy -c:s copy -map &lt;span class="m">0&lt;/span> output.mkv
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>jellyfin使用经验分享</title><link>//blog.xenori.com/2022/09/jellyfin-practice/</link><pubDate>Tue, 27 Sep 2022 11:58:08 +0800</pubDate><guid>//blog.xenori.com/2022/09/jellyfin-practice/</guid><description>&lt;img src="//blog.xenori.com/2022/09/jellyfin-practice/cover.png" alt="Featured image of post jellyfin使用经验分享" />&lt;h2 id="解决我的媒体封面图中文变方块">解决我的媒体封面图中文变方块&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>jellyfin使用指南</title><link>//blog.xenori.com/2022/09/jellyfin-practice/</link><pubDate>Tue, 27 Sep 2022 11:58:08 +0800</pubDate><guid>//blog.xenori.com/2022/09/jellyfin-practice/</guid><description>&lt;img src="//blog.xenori.com/2022/09/jellyfin-practice/cover.png" alt="Featured image of post jellyfin使用指南" />&lt;h2 id="媒体文件命名规范">媒体文件命名规范&lt;/h2>
+&lt;h3 id="电影">电影&lt;/h3>
+&lt;pre tabindex="0">&lt;code>&lt;/code>&lt;/pre>&lt;h3 id="电视剧">电视剧&lt;/h3>
+&lt;pre tabindex="0">&lt;code>&lt;/code>&lt;/pre>&lt;h2 id="解决我的媒体封面图中文变方块">解决我的媒体封面图中文变方块&lt;/h2>
 &lt;p>先进入docker shell，安装中文支持字体&lt;/p>
 &lt;pre tabindex="0">&lt;code>apt update
 apt install fonts-noto-cjk
 &lt;/code>&lt;/pre>&lt;p>安装后先删除旧的封面图，然后选择右下角菜单的&lt;strong>刷新元数据&lt;/strong>，这样会再次生成新的封面。&lt;/p>
-&lt;h2 id="解决实时监控没法刷新">解决实时监控没法刷新&lt;/h2>
+&lt;h2 id="解决元数据没自动获取">解决元数据没自动获取&lt;/h2>
 &lt;p>假如nas的影片很多，inotify的监控文件数会到达上限，就会出现这情况。可以在docker的host端，执行命令增大监控文件数：&lt;/p>
 &lt;pre tabindex="0">&lt;code>sysctl -w fs.inotify.max_user_watches=1048576
 &lt;/code>&lt;/pre>&lt;p>然后重启下jellyfin就可以了&lt;/p>
@@ -936,9 +939,7 @@ data-flex-basis="2972px"
 &lt;h2 id="测试是否生效">测试是否生效&lt;/h2>
 &lt;p>通过curl请求bitwarden服务看有没内容返回&lt;/p>
 &lt;pre tabindex="0">&lt;code>curl https://bwrs.xxx.com
-&lt;/code>&lt;/pre></description></item><item><title>openwrt管理后台使用caddy代替uhttpd</title><link>//blog.xenori.com/2021/08/openwrt-caddy-replace-uhttpd/</link><pubDate>Wed, 11 Aug 2021 07:58:11 +0800</pubDate><guid>//blog.xenori.com/2021/08/openwrt-caddy-replace-uhttpd/</guid><description>&lt;img src="//blog.xenori.com/2021/08/openwrt-caddy-replace-uhttpd/cover.jpeg" alt="Featured image of post openwrt管理后台使用caddy代替uhttpd" />&lt;div class="notices warning" >&lt;blockquote>&lt;p>改用caddy后发现dockerman的控制台会使用不了，一直处于loading状态，暂时不知是caddy的bug，还是cgi插件的bug。。。&lt;/p>
-&lt;/blockquote>&lt;/div>
-&lt;p>openwrt管理后台默认是使用uhttpd提供服务的。一段时间体验下来发现uhttpd有时会没响应，查不到具体原因，只能重启才会恢复正常。为了稳定性和强大的反向代理功能，决定在软路由上使用caddy代替uhttpd。&lt;/p>
+&lt;/code>&lt;/pre></description></item><item><title>openwrt管理后台使用caddy代替uhttpd</title><link>//blog.xenori.com/2021/08/openwrt-caddy-replace-uhttpd/</link><pubDate>Wed, 11 Aug 2021 07:58:11 +0800</pubDate><guid>//blog.xenori.com/2021/08/openwrt-caddy-replace-uhttpd/</guid><description>&lt;img src="//blog.xenori.com/2021/08/openwrt-caddy-replace-uhttpd/cover.jpeg" alt="Featured image of post openwrt管理后台使用caddy代替uhttpd" />&lt;p>openwrt管理后台默认是使用uhttpd提供服务的。一段时间体验下来发现uhttpd有时会没响应，查不到具体原因，只能重启才会恢复正常。为了稳定性和强大的反向代理功能，决定在软路由上使用caddy代替uhttpd。&lt;/p>
 &lt;h2 id="暂停uhttpd服务">暂停uhttpd服务&lt;/h2>
 &lt;p>uhttpd服务占用了80端口，需要先暂停。使用ssh登录openwrt，执行下面命令暂停uhttpd服务：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">/etc/init.d/uhttpd stop
@@ -961,7 +962,7 @@ chmod +x /usr/bin/caddy
 &lt;/code>&lt;/pre>&lt;h2 id="配置caddy">配置caddy&lt;/h2>
 &lt;p>增加下面的配置，并放到&lt;code>/etc/caddy/Caddyfile&lt;/code>文件中：&lt;/p>
 &lt;pre tabindex="0">&lt;code>{
-order cgi last
+order cgi before respond
 }
 :80 {
 @notcgi {
@@ -974,6 +975,8 @@ root /www
 }
 cgi /cgi-bin/luci* /www/cgi-bin/luci {
 script_name /cgi-bin/luci
+# 下面这句很重要，要不然部分服务控制台会工作不正常
+unbuffered_output
 }
 }
 &lt;/code>&lt;/pre>&lt;h2 id="增加启动脚本">增加启动脚本&lt;/h2>
@@ -984,7 +987,7 @@ SERVICE_USE_PID=1
 SERVICE_WRITE_PID=1
 SERVICE_DAEMONIZE=1
 start() {
-service_start /usr/bin/caddy run -config /etc/caddy/Caddyfile
+service_start /usr/bin/caddy run --config /etc/caddy/Caddyfile
 }
 stop() {
 service_stop /usr/bin/caddy
@@ -1285,7 +1288,7 @@ data-flex-basis="403px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 再删除所有本地tag&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git tag &lt;span class="p">|&lt;/span> xargs git tag -d
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="commit修改">Commit修改&lt;/h2>
-&lt;h3 id="清空所有commit">清空所有commit&lt;/h3>
+&lt;h3 id="清空所有历史commit">清空所有历史commit&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 创建新的master分支&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git checkout --orphan new_master
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git add -A
@@ -1306,8 +1309,10 @@ data-flex-basis="403px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git commit -m &lt;span class="s2">&amp;#34;merge commit message&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git push
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="多帐号">多帐号&lt;/h2>
-&lt;h3 id="提交时切换新帐号">提交时切换新帐号&lt;/h3>
+&lt;h3 id="提交时提示输入帐号">提交时提示输入帐号&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">git config --local credential.helper &lt;span class="s2">&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># git地址要使用http协议&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git remote set-url origin https://xxx.com/xxx.git
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>2020年度总结</title><link>//blog.xenori.com/2021/01/the-summary-of-2020/</link><pubDate>Fri, 15 Jan 2021 16:03:08 +0800</pubDate><guid>//blog.xenori.com/2021/01/the-summary-of-2020/</guid><description>&lt;img src="//blog.xenori.com/2021/01/the-summary-of-2020/cover.jpg" alt="Featured image of post 2020年度总结" />&lt;p>今年对大部分人来说，都会是难忘和难过的一年。年初新冠肺炎大爆发，到处寸步难行，食肆工厂关闭。年中中美关系加剧恶化，中印边境紧张，让人对未来几年的形势越来越担忧，年末新冠肺炎再次来袭，希望不会再出现大爆发了。&lt;/p>
 &lt;hugo-encrypt>
 &lt;div class="hugo-encrypt-encryption-notice">
