@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>docker on bitxeno's notes</title><link>//blog.xenori.com/tags/docker/</link><description>Recent content in docker on bitxeno's notes</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 22 Nov 2021 14:40:11 +0800</lastBuildDate><atom:link href="//blog.xenori.com/tags/docker/index.xml" rel="self" type="application/rss+xml"/><item><title>dash实时转换hls流媒体播放</title><link>//blog.xenori.com/2021/11/dash-to-hls/</link><pubDate>Mon, 22 Nov 2021 14:40:11 +0800</pubDate><guid>//blog.xenori.com/2021/11/dash-to-hls/</guid><description>&lt;img src="//blog.xenori.com/2021/11/dash-to-hls/cover.jpeg" alt="Featured image of post dash实时转换hls流媒体播放" />&lt;p>本文主要是探讨下b站的音视频流分离dash格式实时转为hls流媒体，以方便在旧的播放器上播放。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>docker on bitxeno's notes</title><link>https://blog.xenori.com/tags/docker/</link><description>Recent content in docker on bitxeno's notes</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 22 Nov 2021 14:40:11 +0800</lastBuildDate><atom:link href="https://blog.xenori.com/tags/docker/index.xml" rel="self" type="application/rss+xml"/><item><title>dash实时转换hls流媒体播放</title><link>https://blog.xenori.com/2021/11/dash-to-hls/</link><pubDate>Mon, 22 Nov 2021 14:40:11 +0800</pubDate><guid>https://blog.xenori.com/2021/11/dash-to-hls/</guid><description>&lt;img src="https://blog.xenori.com/2021/11/dash-to-hls/cover.jpeg" alt="Featured image of post dash实时转换hls流媒体播放" />&lt;p>本文主要是探讨下b站的音视频流分离dash格式实时转为hls流媒体，以方便在旧的播放器上播放。&lt;/p>
 &lt;h2 id="什么是dash">什么是DASH&lt;/h2>
 &lt;p>dash是基于HTTP的动态自适应流（英語：Dynamic Adaptive Streaming over HTTP，也称MPEG-DASH）的简称。现在b站最新的视频都是返回这种格式，并且是音视频分离的。b站dash实践可以参考这篇ppt: &lt;a class="link" href="https://www.w3.org/2019/03/23-chinese-web-jianqiang-bilibili.pdf" target="_blank" rel="noopener"
 >MPEG-DASH在bilibili的应用与实践&lt;/a>&lt;/p>
@@ -56,10 +56,10 @@ http://xxx/api/hls/segments/2
 &lt;p>docker启动时，需要使用&lt;code>--device&lt;/code>参数绑定显卡设备：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">docker run --device /dev/dri:/dev/dri jrottenberg/ffmpeg:vaapi
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>在openwrt中使用的话中，可在docker配置页&lt;code>device&lt;/code>栏绑定显卡设备&lt;/p>
-&lt;p>&lt;img src="//blog.xenori.com/2021/11/dash-to-hls/1.jpg"
+&lt;p>&lt;img src="https://blog.xenori.com/2021/11/dash-to-hls/1.jpg"
 width="1104"
 height="210"
-srcset="//blog.xenori.com/2021/11/dash-to-hls/1_hu3cc7554004a4f82bf46186159a47e918_23956_480x0_resize_q75_box.jpg 480w, //blog.xenori.com/2021/11/dash-to-hls/1_hu3cc7554004a4f82bf46186159a47e918_23956_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://blog.xenori.com/2021/11/dash-to-hls/1_hu3cc7554004a4f82bf46186159a47e918_23956_480x0_resize_q75_box.jpg 480w, https://blog.xenori.com/2021/11/dash-to-hls/1_hu3cc7554004a4f82bf46186159a47e918_23956_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 alt="图片"
 class="gallery-image"
@@ -72,7 +72,7 @@ data-flex-basis="1261px"
 >https://ffmpeg.org/ffmpeg-all.html#Format-Options&lt;/a>&lt;/li>
 &lt;li>DASH协议直播应用：&lt;a class="link" href="https://cloud.tencent.com/developer/article/1895146" target="_blank" rel="noopener"
 >https://cloud.tencent.com/developer/article/1895146&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>各种开发相关的国内源</title><link>//blog.xenori.com/2020/05/china-speedup-source-for-develop/</link><pubDate>Thu, 07 May 2020 11:27:10 +0800</pubDate><guid>//blog.xenori.com/2020/05/china-speedup-source-for-develop/</guid><description>&lt;pre tabindex="0">&lt;code>阿里云统一官方镜像站：https://developer.aliyun.com/mirror/
+&lt;/ul></description></item><item><title>各种开发相关的国内源</title><link>https://blog.xenori.com/2020/05/china-speedup-source-for-develop/</link><pubDate>Thu, 07 May 2020 11:27:10 +0800</pubDate><guid>https://blog.xenori.com/2020/05/china-speedup-source-for-develop/</guid><description>&lt;pre tabindex="0">&lt;code>阿里云统一官方镜像站：https://developer.aliyun.com/mirror/
 包含了所有开源的国内镜像源，如homebrew，npm，pip，centos等，差不多满足所有开发需求， 🐂🍻
 &lt;/code>&lt;/pre>&lt;h2 id="go-get-国内源">go get 国内源&lt;/h2>
 &lt;p>七牛：https://goproxy.cn&lt;/p>

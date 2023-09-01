@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>.Net on bitxeno's notes</title><link>//blog.xenori.com/tags/.net/</link><description>Recent content in .Net on bitxeno's notes</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 12 May 2012 08:31:49 +0000</lastBuildDate><atom:link href="//blog.xenori.com/tags/.net/index.xml" rel="self" type="application/rss+xml"/><item><title>使用Mono.Cecil更改程序集dll特性</title><link>//blog.xenori.com/2012/05/use-mono-cecil-to-change-dll-attribute/</link><pubDate>Sat, 12 May 2012 08:31:49 +0000</pubDate><guid>//blog.xenori.com/2012/05/use-mono-cecil-to-change-dll-attribute/</guid><description>&lt;p>工作中发现一个公共组件因为某个类不带有[Serializable]特性，导致保存到memcache时出错。刚好负责的同事请假不在，尝试了iLSpy反编译方法后，最后决定使用Mono.Cecil直接修改现成的程序集dll解决。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>.Net on bitxeno's notes</title><link>https://blog.xenori.com/tags/.net/</link><description>Recent content in .Net on bitxeno's notes</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 12 May 2012 08:31:49 +0000</lastBuildDate><atom:link href="https://blog.xenori.com/tags/.net/index.xml" rel="self" type="application/rss+xml"/><item><title>使用Mono.Cecil更改程序集dll特性</title><link>https://blog.xenori.com/2012/05/use-mono-cecil-to-change-dll-attribute/</link><pubDate>Sat, 12 May 2012 08:31:49 +0000</pubDate><guid>https://blog.xenori.com/2012/05/use-mono-cecil-to-change-dll-attribute/</guid><description>&lt;p>工作中发现一个公共组件因为某个类不带有[Serializable]特性，导致保存到memcache时出错。刚好负责的同事请假不在，尝试了iLSpy反编译方法后，最后决定使用Mono.Cecil直接修改现成的程序集dll解决。&lt;/p>
 &lt;p>示例代码如下：&lt;/p>
 &lt;pre>&lt;code>class Program
 {
@@ -34,7 +34,7 @@ Console.WriteLine(&amp;quot;new dll has save as {0}.&amp;quot;, newAsmFileName);
 >下载demo&lt;/a>&lt;/p>
 &lt;p>参考资料：
 &lt;a class="link" href="http://blog.zhaojie.me/2011/09/aspnet-mvc-dynamic-model-mono-cecil.html" target="_blank" rel="noopener"
->使用Mono.Cecil辅助ASP.NET MVC使用dynamic类型Model&lt;/a>&lt;/p></description></item><item><title>Molas——.NET依赖分离框架</title><link>//blog.xenori.com/2012/02/molas-isolation-framework/</link><pubDate>Tue, 14 Feb 2012 17:29:51 +0000</pubDate><guid>//blog.xenori.com/2012/02/molas-isolation-framework/</guid><description>&lt;p>&lt;img src="http://research.microsoft.com/en-us/projects/pex/pexweb.png"
+>使用Mono.Cecil辅助ASP.NET MVC使用dynamic类型Model&lt;/a>&lt;/p></description></item><item><title>Molas——.NET依赖分离框架</title><link>https://blog.xenori.com/2012/02/molas-isolation-framework/</link><pubDate>Tue, 14 Feb 2012 17:29:51 +0000</pubDate><guid>https://blog.xenori.com/2012/02/molas-isolation-framework/</guid><description>&lt;p>&lt;img src="http://research.microsoft.com/en-us/projects/pex/pexweb.png"
 loading="lazy"
 >&lt;a class="link" href="http://research.microsoft.com/en-us/projects/moles/" target="_blank" rel="noopener"
 >Moles&lt;/a>是由微软研究院(&lt;a class="link" href="http://research.microsoft.com" target="_blank" rel="noopener"
@@ -316,7 +316,7 @@ public MMyClass Bind(IEnumerable target) {
 &lt;p>&lt;a class="link" href="http://research.microsoft.com/en-us/projects/pex/molesmanual.pdf" target="_blank" rel="noopener"
 >http://research.microsoft.com/en-us/projects/pex/molesmanual.pdf&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="http://research.microsoft.com/en-us/projects/pex/documentation.aspx" target="_blank" rel="noopener"
->http://research.microsoft.com/en-us/projects/pex/documentation.aspx&lt;/a>&lt;/p></description></item><item><title>使windows服务安装名称可配置</title><link>//blog.xenori.com/2012/01/config-windows-services-install-name/</link><pubDate>Thu, 12 Jan 2012 07:42:04 +0000</pubDate><guid>//blog.xenori.com/2012/01/config-windows-services-install-name/</guid><description>&lt;p>有时，我们安装的windows服务可能是个框架，在同一服务器上可能服务于不同的系统，为了使服务名称不冲突，需要把服务名称更改为可配置。
+>http://research.microsoft.com/en-us/projects/pex/documentation.aspx&lt;/a>&lt;/p></description></item><item><title>使windows服务安装名称可配置</title><link>https://blog.xenori.com/2012/01/config-windows-services-install-name/</link><pubDate>Thu, 12 Jan 2012 07:42:04 +0000</pubDate><guid>https://blog.xenori.com/2012/01/config-windows-services-install-name/</guid><description>&lt;p>有时，我们安装的windows服务可能是个框架，在同一服务器上可能服务于不同的系统，为了使服务名称不冲突，需要把服务名称更改为可配置。
 因为ServiceInstaller能直接设置安装服务的名称和描述，所以很容易就能写出下面的代码：&lt;/p>
 &lt;pre>&lt;code>serviceInstaller.ServiceName = ConfigurationManager.AppSetting[&amp;quot;ServiceName&amp;quot;];
 serviceInstaller.Description = ConfigurationManager.AppSetting[&amp;quot;ServiceDescription&amp;quot;];
@@ -342,7 +342,7 @@ var configPath = Path.Combine(targetDirectory, &amp;quot;Service.exe&amp;quot;);
 var config = ConfigurationManager.OpenExeConfiguration(configPath);
 serviceInstaller.ServiceName = config.AppSettings.Settings[&amp;quot;ServiceName&amp;quot;].Value;
 serviceInstaller.Description = config.AppSettings.Settings[&amp;quot;ServiceDescription&amp;quot;].Value;
-&lt;/code>&lt;/pre></description></item><item><title>开源线程池组件SmartThreadPool</title><link>//blog.xenori.com/2012/01/smartthreadpool/</link><pubDate>Mon, 09 Jan 2012 07:11:38 +0000</pubDate><guid>//blog.xenori.com/2012/01/smartthreadpool/</guid><description>&lt;p>1、为什么需要使用线程池(Thread Pool）&lt;/p>
+&lt;/code>&lt;/pre></description></item><item><title>开源线程池组件SmartThreadPool</title><link>https://blog.xenori.com/2012/01/smartthreadpool/</link><pubDate>Mon, 09 Jan 2012 07:11:38 +0000</pubDate><guid>https://blog.xenori.com/2012/01/smartthreadpool/</guid><description>&lt;p>1、为什么需要使用线程池(Thread Pool）&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>**减少线程间上下文切换。**线程执行一定的时间片后，系统会自动把cpu切换给另一个线程使用，这时还需要保存当前的线程上下文状态，并加载新线程的上下文状态。当程序中有大量的线程时，每个线程分得的时间片会越来越少，可能会出现线程未处理多少操作，就需要切换到另一线程，这样频繁的线程间上下文切换会花费大量的cpu时间。&lt;/p>

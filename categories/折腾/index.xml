@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>折腾 on bitxeno's notes</title><link>//blog.xenori.com/categories/%E6%8A%98%E8%85%BE/</link><description>Recent content in 折腾 on bitxeno's notes</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 27 Sep 2022 11:58:08 +0800</lastBuildDate><atom:link href="//blog.xenori.com/categories/%E6%8A%98%E8%85%BE/index.xml" rel="self" type="application/rss+xml"/><item><title>jellyfin使用指南</title><link>//blog.xenori.com/2022/09/jellyfin-practice/</link><pubDate>Tue, 27 Sep 2022 11:58:08 +0800</pubDate><guid>//blog.xenori.com/2022/09/jellyfin-practice/</guid><description>&lt;img src="//blog.xenori.com/2022/09/jellyfin-practice/cover.png" alt="Featured image of post jellyfin使用指南" />&lt;h2 id="媒体文件命名规范">媒体文件命名规范&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>折腾 on bitxeno's notes</title><link>https://blog.xenori.com/categories/%E6%8A%98%E8%85%BE/</link><description>Recent content in 折腾 on bitxeno's notes</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 27 Sep 2022 11:58:08 +0800</lastBuildDate><atom:link href="https://blog.xenori.com/categories/%E6%8A%98%E8%85%BE/index.xml" rel="self" type="application/rss+xml"/><item><title>jellyfin使用指南</title><link>https://blog.xenori.com/2022/09/jellyfin-practice/</link><pubDate>Tue, 27 Sep 2022 11:58:08 +0800</pubDate><guid>https://blog.xenori.com/2022/09/jellyfin-practice/</guid><description>&lt;img src="https://blog.xenori.com/2022/09/jellyfin-practice/cover.png" alt="Featured image of post jellyfin使用指南" />&lt;h2 id="媒体文件命名规范">媒体文件命名规范&lt;/h2>
 &lt;h3 id="电影">电影&lt;/h3>
 &lt;pre tabindex="0">&lt;code>&lt;/code>&lt;/pre>&lt;h3 id="电视剧">电视剧&lt;/h3>
 &lt;pre tabindex="0">&lt;code>&lt;/code>&lt;/pre>&lt;h2 id="解决我的媒体封面图中文变方块">解决我的媒体封面图中文变方块&lt;/h2>
@@ -13,7 +13,7 @@ apt install fonts-noto-cjk
 &lt;h2 id="最新添加的剧集不在首页显示">最新添加的剧集不在首页显示&lt;/h2>
 &lt;p>默认是按视频文件创建时间排序的，假如视频文件创建日期太旧就会这样，可到控制台&lt;code>媒体库 -&amp;gt; 显示&lt;/code>中，把选项&lt;code>新内容加入的日期&lt;/code>改为使用扫描日期&lt;/p>
 &lt;h2 id="匹配的元数据不正确怎解决">匹配的元数据不正确怎解决？&lt;/h2>
-&lt;p>可以使用右上角的&lt;code>识别&lt;/code>功能重新匹配，假如重新匹配也不正确，可以手工修改元数据，如集号等，再使用&lt;code>刷新元数据 -&amp;gt; 搜索缺少的元数据&lt;/code>匹配缺少的元数据。&lt;/p></description></item><item><title>dash实时转换hls流媒体播放</title><link>//blog.xenori.com/2021/11/dash-to-hls/</link><pubDate>Mon, 22 Nov 2021 14:40:11 +0800</pubDate><guid>//blog.xenori.com/2021/11/dash-to-hls/</guid><description>&lt;img src="//blog.xenori.com/2021/11/dash-to-hls/cover.jpeg" alt="Featured image of post dash实时转换hls流媒体播放" />&lt;p>本文主要是探讨下b站的音视频流分离dash格式实时转为hls流媒体，以方便在旧的播放器上播放。&lt;/p>
+&lt;p>可以使用右上角的&lt;code>识别&lt;/code>功能重新匹配，假如重新匹配也不正确，可以手工修改元数据，如集号等，再使用&lt;code>刷新元数据 -&amp;gt; 搜索缺少的元数据&lt;/code>匹配缺少的元数据。&lt;/p></description></item><item><title>dash实时转换hls流媒体播放</title><link>https://blog.xenori.com/2021/11/dash-to-hls/</link><pubDate>Mon, 22 Nov 2021 14:40:11 +0800</pubDate><guid>https://blog.xenori.com/2021/11/dash-to-hls/</guid><description>&lt;img src="https://blog.xenori.com/2021/11/dash-to-hls/cover.jpeg" alt="Featured image of post dash实时转换hls流媒体播放" />&lt;p>本文主要是探讨下b站的音视频流分离dash格式实时转为hls流媒体，以方便在旧的播放器上播放。&lt;/p>
 &lt;h2 id="什么是dash">什么是DASH&lt;/h2>
 &lt;p>dash是基于HTTP的动态自适应流（英語：Dynamic Adaptive Streaming over HTTP，也称MPEG-DASH）的简称。现在b站最新的视频都是返回这种格式，并且是音视频分离的。b站dash实践可以参考这篇ppt: &lt;a class="link" href="https://www.w3.org/2019/03/23-chinese-web-jianqiang-bilibili.pdf" target="_blank" rel="noopener"
 >MPEG-DASH在bilibili的应用与实践&lt;/a>&lt;/p>
@@ -71,10 +71,10 @@ http://xxx/api/hls/segments/2
 &lt;p>docker启动时，需要使用&lt;code>--device&lt;/code>参数绑定显卡设备：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">docker run --device /dev/dri:/dev/dri jrottenberg/ffmpeg:vaapi
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>在openwrt中使用的话中，可在docker配置页&lt;code>device&lt;/code>栏绑定显卡设备&lt;/p>
-&lt;p>&lt;img src="//blog.xenori.com/2021/11/dash-to-hls/1.jpg"
+&lt;p>&lt;img src="https://blog.xenori.com/2021/11/dash-to-hls/1.jpg"
 width="1104"
 height="210"
-srcset="//blog.xenori.com/2021/11/dash-to-hls/1_hu3cc7554004a4f82bf46186159a47e918_23956_480x0_resize_q75_box.jpg 480w, //blog.xenori.com/2021/11/dash-to-hls/1_hu3cc7554004a4f82bf46186159a47e918_23956_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://blog.xenori.com/2021/11/dash-to-hls/1_hu3cc7554004a4f82bf46186159a47e918_23956_480x0_resize_q75_box.jpg 480w, https://blog.xenori.com/2021/11/dash-to-hls/1_hu3cc7554004a4f82bf46186159a47e918_23956_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 alt="图片"
 class="gallery-image"
@@ -87,15 +87,15 @@ data-flex-basis="1261px"
 >https://ffmpeg.org/ffmpeg-all.html#Format-Options&lt;/a>&lt;/li>
 &lt;li>DASH协议直播应用：&lt;a class="link" href="https://cloud.tencent.com/developer/article/1895146" target="_blank" rel="noopener"
 >https://cloud.tencent.com/developer/article/1895146&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>自建Bitwarden通过cloudflare实现https访问</title><link>//blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/</link><pubDate>Wed, 20 Oct 2021 22:16:11 +0800</pubDate><guid>//blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/</guid><description>&lt;img src="//blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/cover.png" alt="Featured image of post 自建Bitwarden通过cloudflare实现https访问" />&lt;div class="notices warning" >&lt;blockquote>&lt;p>本文的方案只针对局域网内使用bitwarden的情况。实现原理是使用ACME DNS验证方式验证域名所有权。&lt;/p>
+&lt;/ul></description></item><item><title>自建Bitwarden通过cloudflare实现https访问</title><link>https://blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/</link><pubDate>Wed, 20 Oct 2021 22:16:11 +0800</pubDate><guid>https://blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/</guid><description>&lt;img src="https://blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/cover.png" alt="Featured image of post 自建Bitwarden通过cloudflare实现https访问" />&lt;div class="notices warning" >&lt;blockquote>&lt;p>本文的方案只针对局域网内使用bitwarden的情况。实现原理是使用ACME DNS验证方式验证域名所有权。&lt;/p>
 &lt;/blockquote>&lt;/div>
 &lt;p>手机app连接自建bitwarden服务时，需要接口必须是https的，经过比较，决定使用cloudflare代理来实现，这样不用考虑https证书的更新问题。&lt;/p>
 &lt;h2 id="创建bitwarden域dns记录">创建bitwarden域DNS记录&lt;/h2>
 &lt;p>在Cloudflare的DNS面板中创建一条bitwarden服务域的DNS记录，并关闭代理功能，ipv4地址填写openwrt路由地址：&lt;/p>
-&lt;p>&lt;img src="//blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/1.jpg"
+&lt;p>&lt;img src="https://blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/1.jpg"
 width="2040"
 height="304"
-srcset="//blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/1_hu3cc7554004a4f82bf46186159a47e918_51397_480x0_resize_q75_box.jpg 480w, //blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/1_hu3cc7554004a4f82bf46186159a47e918_51397_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/1_hu3cc7554004a4f82bf46186159a47e918_51397_480x0_resize_q75_box.jpg 480w, https://blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/1_hu3cc7554004a4f82bf46186159a47e918_51397_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="671"
@@ -103,20 +103,20 @@ data-flex-basis="1610px"
 >&lt;/p>
 &lt;h2 id="创建-api-令牌">创建 API 令牌&lt;/h2>
 &lt;p>在Cloudflare的&lt;code>概述&lt;/code>面板中，点击右下角的&lt;code>获取您的 API 令牌&lt;/code>，进入创建令牌页。点击&lt;code>创建令牌&lt;/code>，并选择使用模板&lt;code>编辑区域DNS&lt;/code>：&lt;/p>
-&lt;p>&lt;img src="//blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/2.jpg"
+&lt;p>&lt;img src="https://blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/2.jpg"
 width="1554"
 height="978"
-srcset="//blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/2_hu3cc7554004a4f82bf46186159a47e918_164182_480x0_resize_q75_box.jpg 480w, //blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/2_hu3cc7554004a4f82bf46186159a47e918_164182_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/2_hu3cc7554004a4f82bf46186159a47e918_164182_480x0_resize_q75_box.jpg 480w, https://blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/2_hu3cc7554004a4f82bf46186159a47e918_164182_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="158"
 data-flex-basis="381px"
 >&lt;/p>
 &lt;p>按照下面图片所示创建访问权限，&lt;code>区域资源&lt;/code>中可限定为刚刚的DNS域，也可指定为帐号下的所有域：&lt;/p>
-&lt;p>&lt;img src="//blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/3.jpg"
+&lt;p>&lt;img src="https://blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/3.jpg"
 width="1852"
 height="702"
-srcset="//blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/3_hu3cc7554004a4f82bf46186159a47e918_129456_480x0_resize_q75_box.jpg 480w, //blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/3_hu3cc7554004a4f82bf46186159a47e918_129456_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/3_hu3cc7554004a4f82bf46186159a47e918_129456_480x0_resize_q75_box.jpg 480w, https://blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/3_hu3cc7554004a4f82bf46186159a47e918_129456_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="263"
@@ -125,11 +125,11 @@ data-flex-basis="633px"
 &lt;p>一直点击下一步直到完成，复制出api token，并保存好，下面步骤会用到。&lt;/p>
 &lt;h2 id="下载安装caddy">下载安装caddy&lt;/h2>
 &lt;p>进入&lt;a class="link" href="https://caddyserver.com/download" target="_blank" rel="noopener"
->caddy下载页&lt;/a>，下载对应版本，需要选上&lt;code>caddy-dns/cloudflare&lt;/code>模块。caddy如何安装，可以参考我之前的文章——&lt;a class="link" href="//blog.xenori.com/2021/08/openwrt-caddy-replace-uhttpd/" >openwrt管理后台使用caddy代替uhttpd&lt;/a>&lt;/p>
-&lt;p>&lt;img src="//blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/4.jpg"
+>caddy下载页&lt;/a>，下载对应版本，需要选上&lt;code>caddy-dns/cloudflare&lt;/code>模块。caddy如何安装，可以参考我之前的文章——&lt;a class="link" href="https://blog.xenori.com/2021/08/openwrt-caddy-replace-uhttpd/" >openwrt管理后台使用caddy代替uhttpd&lt;/a>&lt;/p>
+&lt;p>&lt;img src="https://blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/4.jpg"
 width="2770"
 height="946"
-srcset="//blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/4_hu3cc7554004a4f82bf46186159a47e918_274587_480x0_resize_q75_box.jpg 480w, //blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/4_hu3cc7554004a4f82bf46186159a47e918_274587_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/4_hu3cc7554004a4f82bf46186159a47e918_274587_480x0_resize_q75_box.jpg 480w, https://blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/4_hu3cc7554004a4f82bf46186159a47e918_274587_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="292"
@@ -147,10 +147,10 @@ reverse_proxy localhost:8143
 &lt;p>修改后，重启caddy使配置生效。&lt;/p>
 &lt;h2 id="openwrt添加本地dns解释记录">openwrt添加本地DNS解释记录&lt;/h2>
 &lt;p>进入openwrt后台，点击&lt;code>网络&lt;/code> -&amp;gt; &lt;code>DHCP/DNS&lt;/code>，在&lt;code>自定义挟持域名&lt;/code>栏添加以下DNS记录：&lt;/p>
-&lt;p>&lt;img src="//blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/5.jpg"
+&lt;p>&lt;img src="https://blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/5.jpg"
 width="2254"
 height="182"
-srcset="//blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/5_hu3cc7554004a4f82bf46186159a47e918_39707_480x0_resize_q75_box.jpg 480w, //blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/5_hu3cc7554004a4f82bf46186159a47e918_39707_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/5_hu3cc7554004a4f82bf46186159a47e918_39707_480x0_resize_q75_box.jpg 480w, https://blog.xenori.com/2021/10/bitwarden-tls-with-cloudflare/5_hu3cc7554004a4f82bf46186159a47e918_39707_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="1238"
@@ -160,47 +160,47 @@ data-flex-basis="2972px"
 &lt;h2 id="测试是否生效">测试是否生效&lt;/h2>
 &lt;p>通过curl请求bitwarden服务看有没内容返回&lt;/p>
 &lt;pre tabindex="0">&lt;code>curl https://bwrs.xxx.com
-&lt;/code>&lt;/pre></description></item><item><title>mkv修改加字幕-dts音频转ac3</title><link>//blog.xenori.com/2021/02/mkv-edit/</link><pubDate>Sun, 28 Feb 2021 15:43:11 +0800</pubDate><guid>//blog.xenori.com/2021/02/mkv-edit/</guid><description>&lt;img src="//blog.xenori.com/2021/02/mkv-edit/cover.jpg" alt="Featured image of post mkv修改加字幕-dts音频转ac3" />&lt;p>近排折腾 jellyfin 的 DLNA 服务时，发现 DLNA 有很多限制：不支持外挂字幕，DTS 音频的视频文件没法播放声音等。下面介绍几种 mkv 视频文件的修改方法，以满足 DLNA 的播放需求。&lt;/p>
+&lt;/code>&lt;/pre></description></item><item><title>mkv修改加字幕-dts音频转ac3</title><link>https://blog.xenori.com/2021/02/mkv-edit/</link><pubDate>Sun, 28 Feb 2021 15:43:11 +0800</pubDate><guid>https://blog.xenori.com/2021/02/mkv-edit/</guid><description>&lt;img src="https://blog.xenori.com/2021/02/mkv-edit/cover.jpg" alt="Featured image of post mkv修改加字幕-dts音频转ac3" />&lt;p>近排折腾 jellyfin 的 DLNA 服务时，发现 DLNA 有很多限制：不支持外挂字幕，DTS 音频的视频文件没法播放声音等。下面介绍几种 mkv 视频文件的修改方法，以满足 DLNA 的播放需求。&lt;/p>
 &lt;h2 id="mkv-增加中文字幕">mkv 增加中文字幕&lt;/h2>
 &lt;p>相关软件：&lt;a class="link" href="https://mkvtoolnix.download/" target="_blank" rel="noopener"
 >mkvtoolnix&lt;/a>&lt;/p>
 &lt;p>下载地址：&lt;a class="link" href="https://pan.baidu.com/s/1J-vXqkArWMSmB3wfDBi-Yg" target="_blank" rel="noopener"
 >https://pan.baidu.com/s/1J-vXqkArWMSmB3wfDBi-Yg&lt;/a> 提取码: vamn&lt;/p>
 &lt;p>大家可以到官网下载最新版，下载后，找到&lt;code>mkvtoolnix-gui.exe&lt;/code>打开，把 mkv 拖进界面，就可以看到 mkv 封装的文件内容了：
-&lt;img src="//blog.xenori.com/2021/02/mkv-edit/1.png"
+&lt;img src="https://blog.xenori.com/2021/02/mkv-edit/1.png"
 width="2161"
 height="1417"
-srcset="//blog.xenori.com/2021/02/mkv-edit/1_hud6df3e7672d5913fad6e0284d586202d_157266_480x0_resize_box_3.png 480w, //blog.xenori.com/2021/02/mkv-edit/1_hud6df3e7672d5913fad6e0284d586202d_157266_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2021/02/mkv-edit/1_hud6df3e7672d5913fad6e0284d586202d_157266_480x0_resize_box_3.png 480w, https://blog.xenori.com/2021/02/mkv-edit/1_hud6df3e7672d5913fad6e0284d586202d_157266_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="152"
 data-flex-basis="366px"
 >&lt;/p>
 &lt;p>点击最下面的&lt;code>添加输入文件&lt;/code>，选择&lt;code>src&lt;/code>格式的字幕文件，确认后就可以看到新字幕已添加到文件列表最下方了
-&lt;img src="//blog.xenori.com/2021/02/mkv-edit/2.png"
+&lt;img src="https://blog.xenori.com/2021/02/mkv-edit/2.png"
 width="2161"
 height="1417"
-srcset="//blog.xenori.com/2021/02/mkv-edit/2_hu8cf2d4e36c5bc9a57288c6a23af19b48_167900_480x0_resize_box_3.png 480w, //blog.xenori.com/2021/02/mkv-edit/2_hu8cf2d4e36c5bc9a57288c6a23af19b48_167900_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2021/02/mkv-edit/2_hu8cf2d4e36c5bc9a57288c6a23af19b48_167900_480x0_resize_box_3.png 480w, https://blog.xenori.com/2021/02/mkv-edit/2_hu8cf2d4e36c5bc9a57288c6a23af19b48_167900_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="152"
 data-flex-basis="366px"
 >&lt;/p>
 &lt;p>用鼠标可以拖动字幕文件的顺序，假如你想新字幕默认显示，可以把新加的字幕拖到所有字幕的最上面，并在右边属性框中，把&lt;code>默认轨道标记&lt;/code>设为&lt;code>是&lt;/code>，这样每次打开视频，就会默认显示新加的字幕了
-&lt;img src="//blog.xenori.com/2021/02/mkv-edit/3.png"
+&lt;img src="https://blog.xenori.com/2021/02/mkv-edit/3.png"
 width="2161"
 height="1417"
-srcset="//blog.xenori.com/2021/02/mkv-edit/3_hu8cf2d4e36c5bc9a57288c6a23af19b48_167165_480x0_resize_box_3.png 480w, //blog.xenori.com/2021/02/mkv-edit/3_hu8cf2d4e36c5bc9a57288c6a23af19b48_167165_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2021/02/mkv-edit/3_hu8cf2d4e36c5bc9a57288c6a23af19b48_167165_480x0_resize_box_3.png 480w, https://blog.xenori.com/2021/02/mkv-edit/3_hu8cf2d4e36c5bc9a57288c6a23af19b48_167165_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="152"
 data-flex-basis="366px"
 >&lt;/p>
 &lt;p>点击最下面的&lt;code>开始混流&lt;/code>按钮，等进度条跑到 100%，就合成输出新的 mkv 文件了：）
-&lt;img src="//blog.xenori.com/2021/02/mkv-edit/4.png"
+&lt;img src="https://blog.xenori.com/2021/02/mkv-edit/4.png"
 width="2161"
 height="1417"
-srcset="//blog.xenori.com/2021/02/mkv-edit/4_hu8cf2d4e36c5bc9a57288c6a23af19b48_165832_480x0_resize_box_3.png 480w, //blog.xenori.com/2021/02/mkv-edit/4_hu8cf2d4e36c5bc9a57288c6a23af19b48_165832_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2021/02/mkv-edit/4_hu8cf2d4e36c5bc9a57288c6a23af19b48_165832_480x0_resize_box_3.png 480w, https://blog.xenori.com/2021/02/mkv-edit/4_hu8cf2d4e36c5bc9a57288c6a23af19b48_165832_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="152"
@@ -212,43 +212,43 @@ data-flex-basis="366px"
 &lt;p>下载地址：&lt;a class="link" href="https://pan.baidu.com/s/1jYv8Y6M49iszq8d30p62ag" target="_blank" rel="noopener"
 >https://pan.baidu.com/s/1jYv8Y6M49iszq8d30p62ag&lt;/a> 提取码: trg6&lt;/p>
 &lt;p>打开软件，点击&lt;code>File specification&lt;/code>中的&lt;code>Browser&lt;/code>，打开需转换 DTS 的 mkv 视频文件，打开后在下方会显示相关视频信息。
-&lt;img src="//blog.xenori.com/2021/02/mkv-edit/dts_1.png"
+&lt;img src="https://blog.xenori.com/2021/02/mkv-edit/dts_1.png"
 width="2192"
 height="1441"
-srcset="//blog.xenori.com/2021/02/mkv-edit/dts_1_huce4be9537b2e752369ed9fb959cd4c5e_119357_480x0_resize_box_3.png 480w, //blog.xenori.com/2021/02/mkv-edit/dts_1_huce4be9537b2e752369ed9fb959cd4c5e_119357_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2021/02/mkv-edit/dts_1_huce4be9537b2e752369ed9fb959cd4c5e_119357_480x0_resize_box_3.png 480w, https://blog.xenori.com/2021/02/mkv-edit/dts_1_huce4be9537b2e752369ed9fb959cd4c5e_119357_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="152"
 data-flex-basis="365px"
 >&lt;/p>
 &lt;p>在右边的&lt;code>DTS&lt;/code>属性框，选择&lt;code>Convert to Dolby Digital&lt;/code>，Bitrate 一般选择&lt;code>448&lt;/code>就可以了，&lt;code>Cleanup DTS track before re-encode&lt;/code>选择&lt;code>Always&lt;/code>，这样会把原有的 DTS 音轨删除，避免影响 DLNA 服务播放。
-&lt;img src="//blog.xenori.com/2021/02/mkv-edit/dts_2.png"
+&lt;img src="https://blog.xenori.com/2021/02/mkv-edit/dts_2.png"
 width="2192"
 height="1304"
-srcset="//blog.xenori.com/2021/02/mkv-edit/dts_2_hu297745a1f9178dfdd53211338a0fb34e_115148_480x0_resize_box_3.png 480w, //blog.xenori.com/2021/02/mkv-edit/dts_2_hu297745a1f9178dfdd53211338a0fb34e_115148_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2021/02/mkv-edit/dts_2_hu297745a1f9178dfdd53211338a0fb34e_115148_480x0_resize_box_3.png 480w, https://blog.xenori.com/2021/02/mkv-edit/dts_2_hu297745a1f9178dfdd53211338a0fb34e_115148_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="168"
 data-flex-basis="403px"
 >&lt;/p>
 &lt;p>点击&lt;code>File specification&lt;/code>中的&lt;code>Run&lt;/code>按钮，就会开始编码生成新的 mkv 文件了：）
-&lt;img src="//blog.xenori.com/2021/02/mkv-edit/dts_3.png"
+&lt;img src="https://blog.xenori.com/2021/02/mkv-edit/dts_3.png"
 width="2192"
 height="1303"
-srcset="//blog.xenori.com/2021/02/mkv-edit/dts_3_hu1ceda27dbd594766223579b0147ae02d_113882_480x0_resize_box_3.png 480w, //blog.xenori.com/2021/02/mkv-edit/dts_3_hu1ceda27dbd594766223579b0147ae02d_113882_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2021/02/mkv-edit/dts_3_hu1ceda27dbd594766223579b0147ae02d_113882_480x0_resize_box_3.png 480w, https://blog.xenori.com/2021/02/mkv-edit/dts_3_hu1ceda27dbd594766223579b0147ae02d_113882_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="168"
 data-flex-basis="403px"
->&lt;/p></description></item><item><title>华硕主板AX200网卡如何开启WOL网络唤醒</title><link>//blog.xenori.com/2020/12/intel-ax200-wol/</link><pubDate>Tue, 22 Dec 2020 13:27:10 +0800</pubDate><guid>//blog.xenori.com/2020/12/intel-ax200-wol/</guid><description>&lt;img src="//blog.xenori.com/2020/12/intel-ax200-wol/cover.png" alt="Featured image of post 华硕主板AX200网卡如何开启WOL网络唤醒" />&lt;p>&lt;a class="link" href="https://en.wikipedia.org/wiki/Wake-on-LAN" target="_blank" rel="noopener"
+>&lt;/p></description></item><item><title>华硕主板AX200网卡如何开启WOL网络唤醒</title><link>https://blog.xenori.com/2020/12/intel-ax200-wol/</link><pubDate>Tue, 22 Dec 2020 13:27:10 +0800</pubDate><guid>https://blog.xenori.com/2020/12/intel-ax200-wol/</guid><description>&lt;img src="https://blog.xenori.com/2020/12/intel-ax200-wol/cover.png" alt="Featured image of post 华硕主板AX200网卡如何开启WOL网络唤醒" />&lt;p>&lt;a class="link" href="https://en.wikipedia.org/wiki/Wake-on-LAN" target="_blank" rel="noopener"
 >WOL网络唤醒&lt;/a>是用来实现通过特定的指令唤醒同一局域网下已关机 PC 的功能。现在常用的 &lt;code>DLNA&lt;/code> 和 &lt;code>moonlight&lt;/code> 软件都支持 WOL 功能，这篇文章只要记录下华硕主板如何打开 WOL 功能（其他厂商的主板大同小异，只要是 BIOS 选项和网卡选项会有些差别）。实现 WOL 功能的 PC 主机是必须通过网线连接在同一局域网下的，只有 WIFI 连接没法实现。&lt;/p>
 &lt;h2 id="1主板-bios-中打开-wol-功能">1、主板 BIOS 中打开 WOL 功能&lt;/h2>
 &lt;p>进入主板BIOS，把如下配置项设为&lt;code>enabled&lt;/code>（不同的主板 BIOS 可能会有出入，请以说明书为准）：&lt;/p>
 &lt;pre tabindex="0">&lt;code>Advanced -&amp;gt; APM Configuration -&amp;gt; Power On By PCI-E/PCI -&amp;gt; Enabled
-&lt;/code>&lt;/pre>&lt;p>&lt;img src="//blog.xenori.com/2020/12/intel-ax200-wol/bios.jpg"
+&lt;/code>&lt;/pre>&lt;p>&lt;img src="https://blog.xenori.com/2020/12/intel-ax200-wol/bios.jpg"
 width="1689"
 height="752"
-srcset="//blog.xenori.com/2020/12/intel-ax200-wol/bios_hu3c3bff7c1814fb83f5fd3fc244e253df_134841_480x0_resize_q75_box.jpg 480w, //blog.xenori.com/2020/12/intel-ax200-wol/bios_hu3c3bff7c1814fb83f5fd3fc244e253df_134841_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://blog.xenori.com/2020/12/intel-ax200-wol/bios_hu3c3bff7c1814fb83f5fd3fc244e253df_134841_480x0_resize_q75_box.jpg 480w, https://blog.xenori.com/2020/12/intel-ax200-wol/bios_hu3c3bff7c1814fb83f5fd3fc244e253df_134841_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="224"
@@ -260,59 +260,59 @@ data-flex-basis="539px"
 &lt;div class="notices warning" >&lt;blockquote>&lt;p>假如网络设置中找不到以上选项，可以尝试下载安装最新的网卡驱动，windows默认的网卡驱动有时会缺少以上选项的。&lt;/p>
 &lt;/blockquote>&lt;/div>
 &lt;p>点击 windows 任务栏右下角网络连接图标，选择&lt;code>网络和Internet设置&lt;/code>：&lt;/p>
-&lt;p>&lt;img src="//blog.xenori.com/2020/12/intel-ax200-wol/1.jpg"
+&lt;p>&lt;img src="https://blog.xenori.com/2020/12/intel-ax200-wol/1.jpg"
 width="750"
 height="538"
-srcset="//blog.xenori.com/2020/12/intel-ax200-wol/1_hu3cc7554004a4f82bf46186159a47e918_90079_480x0_resize_q75_box.jpg 480w, //blog.xenori.com/2020/12/intel-ax200-wol/1_hu3cc7554004a4f82bf46186159a47e918_90079_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://blog.xenori.com/2020/12/intel-ax200-wol/1_hu3cc7554004a4f82bf46186159a47e918_90079_480x0_resize_q75_box.jpg 480w, https://blog.xenori.com/2020/12/intel-ax200-wol/1_hu3cc7554004a4f82bf46186159a47e918_90079_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="139"
 data-flex-basis="334px"
 >&lt;/p>
 &lt;p>选择&lt;code>高级网络设置 -&amp;gt; 更改适配器选项&lt;/code>：&lt;/p>
-&lt;p>&lt;img src="//blog.xenori.com/2020/12/intel-ax200-wol/2.jpg"
+&lt;p>&lt;img src="https://blog.xenori.com/2020/12/intel-ax200-wol/2.jpg"
 width="2204"
 height="1454"
-srcset="//blog.xenori.com/2020/12/intel-ax200-wol/2_hu3cc7554004a4f82bf46186159a47e918_213301_480x0_resize_q75_box.jpg 480w, //blog.xenori.com/2020/12/intel-ax200-wol/2_hu3cc7554004a4f82bf46186159a47e918_213301_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://blog.xenori.com/2020/12/intel-ax200-wol/2_hu3cc7554004a4f82bf46186159a47e918_213301_480x0_resize_q75_box.jpg 480w, https://blog.xenori.com/2020/12/intel-ax200-wol/2_hu3cc7554004a4f82bf46186159a47e918_213301_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="151"
 data-flex-basis="363px"
 >&lt;/p>
 &lt;p>右键&lt;code>以太网&lt;/code>链接，选择&lt;code>属性&lt;/code>，再点击&lt;code>配置&lt;/code>：&lt;/p>
-&lt;p>&lt;img src="//blog.xenori.com/2020/12/intel-ax200-wol/3.jpg"
+&lt;p>&lt;img src="https://blog.xenori.com/2020/12/intel-ax200-wol/3.jpg"
 width="1356"
 height="950"
-srcset="//blog.xenori.com/2020/12/intel-ax200-wol/3_hu3cc7554004a4f82bf46186159a47e918_168571_480x0_resize_q75_box.jpg 480w, //blog.xenori.com/2020/12/intel-ax200-wol/3_hu3cc7554004a4f82bf46186159a47e918_168571_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://blog.xenori.com/2020/12/intel-ax200-wol/3_hu3cc7554004a4f82bf46186159a47e918_168571_480x0_resize_q75_box.jpg 480w, https://blog.xenori.com/2020/12/intel-ax200-wol/3_hu3cc7554004a4f82bf46186159a47e918_168571_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="142"
 data-flex-basis="342px"
 >&lt;/p>
-&lt;p>&lt;img src="//blog.xenori.com/2020/12/intel-ax200-wol/4.jpg"
+&lt;p>&lt;img src="https://blog.xenori.com/2020/12/intel-ax200-wol/4.jpg"
 width="842"
 height="1190"
-srcset="//blog.xenori.com/2020/12/intel-ax200-wol/4_hu3cc7554004a4f82bf46186159a47e918_208543_480x0_resize_q75_box.jpg 480w, //blog.xenori.com/2020/12/intel-ax200-wol/4_hu3cc7554004a4f82bf46186159a47e918_208543_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://blog.xenori.com/2020/12/intel-ax200-wol/4_hu3cc7554004a4f82bf46186159a47e918_208543_480x0_resize_q75_box.jpg 480w, https://blog.xenori.com/2020/12/intel-ax200-wol/4_hu3cc7554004a4f82bf46186159a47e918_208543_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="70"
 data-flex-basis="169px"
 >&lt;/p>
 &lt;p>点击属性的&lt;code>电源管理&lt;/code>，把图片中的如下三项都勾选上：&lt;/p>
-&lt;p>&lt;img src="//blog.xenori.com/2020/12/intel-ax200-wol/5.jpg"
+&lt;p>&lt;img src="https://blog.xenori.com/2020/12/intel-ax200-wol/5.jpg"
 width="930"
 height="1066"
-srcset="//blog.xenori.com/2020/12/intel-ax200-wol/5_hu3cc7554004a4f82bf46186159a47e918_128409_480x0_resize_q75_box.jpg 480w, //blog.xenori.com/2020/12/intel-ax200-wol/5_hu3cc7554004a4f82bf46186159a47e918_128409_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://blog.xenori.com/2020/12/intel-ax200-wol/5_hu3cc7554004a4f82bf46186159a47e918_128409_480x0_resize_q75_box.jpg 480w, https://blog.xenori.com/2020/12/intel-ax200-wol/5_hu3cc7554004a4f82bf46186159a47e918_128409_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="87"
 data-flex-basis="209px"
 >&lt;/p>
 &lt;p>再点击&lt;code>高级&lt;/code>，确保&lt;code>唤醒模式匹配&lt;/code>和&lt;code>唤醒魔包&lt;/code>都是&lt;code>启用&lt;/code>状态：&lt;/p>
-&lt;p>&lt;img src="//blog.xenori.com/2020/12/intel-ax200-wol/6.jpg"
+&lt;p>&lt;img src="https://blog.xenori.com/2020/12/intel-ax200-wol/6.jpg"
 width="928"
 height="1066"
-srcset="//blog.xenori.com/2020/12/intel-ax200-wol/6_hu3cc7554004a4f82bf46186159a47e918_182177_480x0_resize_q75_box.jpg 480w, //blog.xenori.com/2020/12/intel-ax200-wol/6_hu3cc7554004a4f82bf46186159a47e918_182177_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://blog.xenori.com/2020/12/intel-ax200-wol/6_hu3cc7554004a4f82bf46186159a47e918_182177_480x0_resize_q75_box.jpg 480w, https://blog.xenori.com/2020/12/intel-ax200-wol/6_hu3cc7554004a4f82bf46186159a47e918_182177_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="87"
@@ -320,10 +320,10 @@ data-flex-basis="208px"
 >&lt;/p>
 &lt;blockquote>
 &lt;p>在&lt;code>高级&lt;/code>选项卡中，看下是否存在&lt;code>启用 PME&lt;/code>，有的话，也需要启用，启用这项是为了避免关机后主板切断网口的电源，导致没法唤醒
-&lt;img src="//blog.xenori.com/2020/12/intel-ax200-wol/7.jpg"
+&lt;img src="https://blog.xenori.com/2020/12/intel-ax200-wol/7.jpg"
 width="928"
 height="1060"
-srcset="//blog.xenori.com/2020/12/intel-ax200-wol/7_hu3cc7554004a4f82bf46186159a47e918_177395_480x0_resize_q75_box.jpg 480w, //blog.xenori.com/2020/12/intel-ax200-wol/7_hu3cc7554004a4f82bf46186159a47e918_177395_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://blog.xenori.com/2020/12/intel-ax200-wol/7_hu3cc7554004a4f82bf46186159a47e918_177395_480x0_resize_q75_box.jpg 480w, https://blog.xenori.com/2020/12/intel-ax200-wol/7_hu3cc7554004a4f82bf46186159a47e918_177395_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="87"
@@ -332,10 +332,10 @@ data-flex-basis="210px"
 &lt;/blockquote>
 &lt;h2 id="3关闭-windows-10-快速启动">3、关闭 windows 10 快速启动&lt;/h2>
 &lt;p>在打开快速启动电源选项时，windows默认关机功能是进入S4状态，这种状态是不能WOL唤醒的，需要在&lt;code>控制面板 -&amp;gt; 电源选项 -&amp;gt; 选择电源按钮的功能&lt;/code>中，关闭快速启动。&lt;/p>
-&lt;p>&lt;img src="//blog.xenori.com/2020/12/intel-ax200-wol/8.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2020/12/intel-ax200-wol/8.png"
 width="1080"
 height="691"
-srcset="//blog.xenori.com/2020/12/intel-ax200-wol/8_hu36807877dde4530faafb021916780f6e_178683_480x0_resize_box_3.png 480w, //blog.xenori.com/2020/12/intel-ax200-wol/8_hu36807877dde4530faafb021916780f6e_178683_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2020/12/intel-ax200-wol/8_hu36807877dde4530faafb021916780f6e_178683_480x0_resize_box_3.png 480w, https://blog.xenori.com/2020/12/intel-ax200-wol/8_hu36807877dde4530faafb021916780f6e_178683_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="156"
@@ -361,7 +361,7 @@ wakeonlan XX:XX:XX:00:4C:00
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://post.smzdm.com/p/amx025p4/" target="_blank" rel="noopener"
 >WOL 网络唤醒避坑指南：常见问题的分析与内容补充&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Windows下如何连接LG UltraFine 4k显示器</title><link>//blog.xenori.com/2020/09/connect-ultrafine-with-windows/</link><pubDate>Fri, 11 Sep 2020 13:07:10 +0800</pubDate><guid>//blog.xenori.com/2020/09/connect-ultrafine-with-windows/</guid><description>&lt;img src="//blog.xenori.com/2020/09/connect-ultrafine-with-windows/cover.jpg" alt="Featured image of post Windows下如何连接LG UltraFine 4k显示器" />&lt;blockquote>
+&lt;/ul></description></item><item><title>Windows下如何连接LG UltraFine 4k显示器</title><link>https://blog.xenori.com/2020/09/connect-ultrafine-with-windows/</link><pubDate>Fri, 11 Sep 2020 13:07:10 +0800</pubDate><guid>https://blog.xenori.com/2020/09/connect-ultrafine-with-windows/</guid><description>&lt;img src="https://blog.xenori.com/2020/09/connect-ultrafine-with-windows/cover.jpg" alt="Featured image of post Windows下如何连接LG UltraFine 4k显示器" />&lt;blockquote>
 &lt;p>19年时为了开发时字体显示能有更好的效果，所以准备入手一台 4K 的显示器。经过一系列的筛查比较后，最后买了苹果官网的 LG UltraFine 4k 显示器，选它的原因只要有两点：&lt;/p>
 &lt;ol>
 &lt;li>带 type-c 的雷电3接口，方便笔记本 Macbook Pro 可以直连输出&lt;/li>
@@ -403,10 +403,10 @@ alt="cca4111efe3fd276.jpg"
 &lt;p>另外，假如你想买支持雷电 3的主板直连 UltraFine 的话，记得确认下主板是否带&lt;code>DP IN&lt;/code>的接口，像&lt;a class="link" href="https://item.jd.com/100007020310.html" target="_blank" rel="noopener"
 >华擎（ASRock）X570 Phantom Gaming&lt;/a>这种的。因为只有带了&lt;code>DP IN&lt;/code>接口，才能把独立显卡的信号转接到主板雷电3接口，以便输出图像到 UltraFine，要不然主板的雷电3就只能支持cpu的核显输出的，不支持独立显卡。&lt;/p>
 &lt;h2 id="戴尔dell-upd2018">戴尔(DELL) UPD2018&lt;/h2>
-&lt;p>&lt;img src="//blog.xenori.com/2020/09/connect-ultrafine-with-windows/upd2018.jpg"
+&lt;p>&lt;img src="https://blog.xenori.com/2020/09/connect-ultrafine-with-windows/upd2018.jpg"
 width="750"
 height="500"
-srcset="//blog.xenori.com/2020/09/connect-ultrafine-with-windows/upd2018_hu231bf709c668f3555c0bf39f630ce0d0_56452_480x0_resize_q75_box.jpg 480w, //blog.xenori.com/2020/09/connect-ultrafine-with-windows/upd2018_hu231bf709c668f3555c0bf39f630ce0d0_56452_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://blog.xenori.com/2020/09/connect-ultrafine-with-windows/upd2018_hu231bf709c668f3555c0bf39f630ce0d0_56452_480x0_resize_q75_box.jpg 480w, https://blog.xenori.com/2020/09/connect-ultrafine-with-windows/upd2018_hu231bf709c668f3555c0bf39f630ce0d0_56452_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="150"
@@ -419,7 +419,7 @@ data-flex-basis="360px"
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://forums.macrumors.com/threads/lg-ultrafine-4k-and-5k-yes-you-can-connect-it-to-windows-computers-via-dp.2227756/" target="_blank" rel="noopener"
 >https://forums.macrumors.com/threads/lg-ultrafine-4k-and-5k-yes-you-can-connect-it-to-windows-computers-via-dp.2227756/&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>一加7 pro使用 pn532 复制手机加密门禁卡</title><link>//blog.xenori.com/2019/12/use-pn532-copy-encryption-card-in-oneplus7pro/</link><pubDate>Mon, 30 Dec 2019 11:27:10 +0800</pubDate><guid>//blog.xenori.com/2019/12/use-pn532-copy-encryption-card-in-oneplus7pro/</guid><description>&lt;p>入住万科小区后，每次出入都要经过两次门禁，导致虽然装了智能锁，但还是要带门禁卡，所以一直想着怎样把门禁复制到手机 NFC 上。一加7 pro 在 11 月已推送了门禁卡功能，但只支持未加密的门禁卡，万科的一卡通都是加密过的，所以直接复制不了。&lt;/p>
+&lt;/ul></description></item><item><title>一加7 pro使用 pn532 复制手机加密门禁卡</title><link>https://blog.xenori.com/2019/12/use-pn532-copy-encryption-card-in-oneplus7pro/</link><pubDate>Mon, 30 Dec 2019 11:27:10 +0800</pubDate><guid>https://blog.xenori.com/2019/12/use-pn532-copy-encryption-card-in-oneplus7pro/</guid><description>&lt;p>入住万科小区后，每次出入都要经过两次门禁，导致虽然装了智能锁，但还是要带门禁卡，所以一直想着怎样把门禁复制到手机 NFC 上。一加7 pro 在 11 月已推送了门禁卡功能，但只支持未加密的门禁卡，万科的一卡通都是加密过的，所以直接复制不了。&lt;/p>
 &lt;p>加密卡也分半加密或全加密，属于哪种类型，可以手机下载 &lt;a class="link" href="https://github.com/ikarus23/MifareClassicTool" target="_blank" rel="noopener"
 >MifareClassicTool (MCT)&lt;/a> 查看，部分扇位可以看到内容的就是半加密，所有扇位内容都看不到的就是全加密卡，全加密卡的话，建议直接放弃，破解密钥需要太多时间了。&lt;/p>
 &lt;p>经过在酷安浏览 NFC 相关内容，发现是有方法可以实现复制的，但需要一个 PN532 的 NFC 解密设备和 CUID 空白卡，复制流程如下：&lt;/p>

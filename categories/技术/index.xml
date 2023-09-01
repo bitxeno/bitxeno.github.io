@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>技术 on bitxeno's notes</title><link>//blog.xenori.com/categories/%E6%8A%80%E6%9C%AF/</link><description>Recent content in 技术 on bitxeno's notes</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 22 May 2023 12:35:10 +0800</lastBuildDate><atom:link href="//blog.xenori.com/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>Mac系统下如何抓包unix套接字（Unix Domain Socket）</title><link>//blog.xenori.com/2023/05/how-to-capture-unix-domain-socket-on-mac/</link><pubDate>Mon, 22 May 2023 12:35:10 +0800</pubDate><guid>//blog.xenori.com/2023/05/how-to-capture-unix-domain-socket-on-mac/</guid><description>&lt;img src="//blog.xenori.com/2023/05/how-to-capture-unix-domain-socket-on-mac/cover.png" alt="Featured image of post Mac系统下如何抓包unix套接字（Unix Domain Socket）" />&lt;p>普通的抓包工具如 charles 等没法抓取unix套接字数据，需要借助 socat 来抓取。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>技术 on bitxeno's notes</title><link>https://blog.xenori.com/categories/%E6%8A%80%E6%9C%AF/</link><description>Recent content in 技术 on bitxeno's notes</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 22 May 2023 12:35:10 +0800</lastBuildDate><atom:link href="https://blog.xenori.com/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>Mac系统下如何抓包unix套接字（Unix Domain Socket）</title><link>https://blog.xenori.com/2023/05/how-to-capture-unix-domain-socket-on-mac/</link><pubDate>Mon, 22 May 2023 12:35:10 +0800</pubDate><guid>https://blog.xenori.com/2023/05/how-to-capture-unix-domain-socket-on-mac/</guid><description>&lt;img src="https://blog.xenori.com/2023/05/how-to-capture-unix-domain-socket-on-mac/cover.png" alt="Featured image of post Mac系统下如何抓包unix套接字（Unix Domain Socket）" />&lt;p>普通的抓包工具如 charles 等没法抓取unix套接字数据，需要借助 socat 来抓取。&lt;/p>
 &lt;h2 id="安装抓包工具-socat">安装抓包工具 socat&lt;/h2>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">brew install socat
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="制作抓包脚本">制作抓包脚本&lt;/h2>
@@ -48,7 +48,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;string&amp;gt;XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX&amp;lt;/string&amp;gt;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/dict&amp;gt;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/plist&amp;gt;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>通过 WSA 抓取 android 的 https 网络请求包</title><link>//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/</link><pubDate>Mon, 15 May 2023 15:27:10 +0800</pubDate><guid>//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/</guid><description>&lt;img src="//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/cover.jpeg" alt="Featured image of post 通过 WSA 抓取 android 的 https 网络请求包" />&lt;p>android 9 以上版本，app 不再信任用户安装的证书，只能通过 root 手机把证书移动到 system 分区才能实现抓包。一般日常使用手机为了安全是不可能 root 的，这里通过 Windows 的 WSA 来实现抓包。&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>通过 WSA 抓取 android 的 https 网络请求包</title><link>https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/</link><pubDate>Mon, 15 May 2023 15:27:10 +0800</pubDate><guid>https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/</guid><description>&lt;img src="https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/cover.jpeg" alt="Featured image of post 通过 WSA 抓取 android 的 https 网络请求包" />&lt;p>android 9 以上版本，app 不再信任用户安装的证书，只能通过 root 手机把证书移动到 system 分区才能实现抓包。一般日常使用手机为了安全是不可能 root 的，这里通过 Windows 的 WSA 来实现抓包。&lt;/p>
 &lt;h2 id="准备环境">准备环境&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -59,10 +59,10 @@
 &lt;p>安装后，开始菜单中搜索 &lt;code>android&lt;/code>，找到 WSA 设置应用并打开，选择 &lt;code>开发人员&lt;/code>，并打开&lt;code>开发人员模式&lt;/code>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/1.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/1.png"
 width="1084"
 height="718"
-srcset="//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/1_hub311dd2faff923cd2dc66f0ae9a4776d_92901_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/1_hub311dd2faff923cd2dc66f0ae9a4776d_92901_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/1_hub311dd2faff923cd2dc66f0ae9a4776d_92901_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/1_hub311dd2faff923cd2dc66f0ae9a4776d_92901_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="150"
@@ -93,10 +93,10 @@ data-flex-basis="362px"
 &lt;p>点击&lt;strong>WSA工具箱&lt;/strong>首页的&lt;code>Android设置&lt;/code>，选择&lt;code>安全-&amp;gt;更多安全设置-&amp;gt;加密与凭据-&amp;gt;安装证书&lt;/code>菜单，选择并安装&lt;code>Download&lt;/code>目录的&lt;code>charles&lt;/code>证书&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/2.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/2.png"
 width="1390"
 height="864"
-srcset="//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/2_huc11281a385f0323f7fb22346342b05c5_278663_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/2_huc11281a385f0323f7fb22346342b05c5_278663_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/2_huc11281a385f0323f7fb22346342b05c5_278663_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/2_huc11281a385f0323f7fb22346342b05c5_278663_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="160"
@@ -105,10 +105,10 @@ data-flex-basis="386px"
 &lt;ol start="4">
 &lt;li>证书安装成功后，正常在&lt;code>加密与凭据-&amp;gt;信任的凭据-&amp;gt;用户&lt;/code>项中能看到已安装的证书&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/3.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/3.png"
 width="582"
 height="688"
-srcset="//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/3_hu6752eb6c708844501a8d4a854f8e7790_62810_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/3_hu6752eb6c708844501a8d4a854f8e7790_62810_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/3_hu6752eb6c708844501a8d4a854f8e7790_62810_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/3_hu6752eb6c708844501a8d4a854f8e7790_62810_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="84"
@@ -124,10 +124,10 @@ data-flex-basis="203px"
 &lt;p>打开 &lt;strong>Magisk&lt;/strong> app，点击&lt;code>模块 -&amp;gt; 从本地安装&lt;/code>，选择刚刚上传的&lt;code>Download&lt;/code>目录下的&lt;code>AlwaysTrustUserCerts&lt;/code>压缩包&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/4.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/4.png"
 width="544"
 height="718"
-srcset="//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/4_hu62ae5ce2897a65b7a4027a8ee750a16e_45040_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/4_hu62ae5ce2897a65b7a4027a8ee750a16e_45040_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/4_hu62ae5ce2897a65b7a4027a8ee750a16e_45040_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/4_hu62ae5ce2897a65b7a4027a8ee750a16e_45040_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="75"
@@ -141,10 +141,10 @@ data-flex-basis="181px"
 &lt;p>重启后正常能在&lt;code>加密与凭据-&amp;gt;信任的凭据-&amp;gt;系统&lt;/code>中，看到&lt;code>charles&lt;/code>证书&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/5.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/5.png"
 width="544"
 height="696"
-srcset="//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/5_hub5c871cd5d01a8af30fa5218ac6cbbd2_106297_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/5_hub5c871cd5d01a8af30fa5218ac6cbbd2_106297_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/5_hub5c871cd5d01a8af30fa5218ac6cbbd2_106297_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/5_hub5c871cd5d01a8af30fa5218ac6cbbd2_106297_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="78"
@@ -154,10 +154,10 @@ data-flex-basis="187px"
 &lt;ol>
 &lt;li>打开 &lt;strong>charles&lt;/strong>，选择菜单&lt;code>Proxy -&amp;gt; SSL Proxying Settings...&lt;/code>，勾选 &lt;code>Enable SSL Proxying&lt;/code>，并添加新的 location，&lt;code>Host&lt;/code>填&lt;code>*&lt;/code>，&lt;code>Port&lt;/code>填&lt;code>443&lt;/code>&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/6.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/6.png"
 width="1620"
 height="808"
-srcset="//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/6_hudd5d61aff7f94b1e6ad1eb93fdacf997_349536_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/6_hudd5d61aff7f94b1e6ad1eb93fdacf997_349536_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/6_hudd5d61aff7f94b1e6ad1eb93fdacf997_349536_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/6_hudd5d61aff7f94b1e6ad1eb93fdacf997_349536_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="200"
@@ -177,7 +177,7 @@ adb shell settings put global http_proxy 192.168.x.x:8888
 &lt;pre tabindex="0">&lt;code>adb shell settings delete global http_proxy
 adb shell settings delete global global_http_proxy_host
 adb shell settings delete global global_http_proxy_port
-&lt;/code>&lt;/pre></description></item><item><title>如何抓取 AppleTV (tvOS) 的 https 网络请求包</title><link>//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/</link><pubDate>Sun, 14 May 2023 11:27:10 +0800</pubDate><guid>//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/</guid><description>&lt;img src="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/cover.webp" alt="Featured image of post 如何抓取 AppleTV (tvOS) 的 https 网络请求包" />&lt;p>AppleTV 无法直接安装证书和修改代理，需要借助添加自定义描述文件的方式来实现，才能对 app 进行抓包。&lt;/p>
+&lt;/code>&lt;/pre></description></item><item><title>如何抓取 AppleTV (tvOS) 的 https 网络请求包</title><link>https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/</link><pubDate>Sun, 14 May 2023 11:27:10 +0800</pubDate><guid>https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/</guid><description>&lt;img src="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/cover.webp" alt="Featured image of post 如何抓取 AppleTV (tvOS) 的 https 网络请求包" />&lt;p>AppleTV 无法直接安装证书和修改代理，需要借助添加自定义描述文件的方式来实现，才能对 app 进行抓包。&lt;/p>
 &lt;h2 id="准备环境">准备环境&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -195,10 +195,10 @@ adb shell settings delete global global_http_proxy_port
 &lt;ol>
 &lt;li>打开 &lt;strong>charles&lt;/strong>，选择菜单&lt;code>Proxy -&amp;gt; SSL Proxying Settings...&lt;/code>，勾选 &lt;code>Enable SSL Proxying&lt;/code>，并添加新的 location，&lt;code>Host&lt;/code>填&lt;code>*&lt;/code>，&lt;code>Port&lt;/code>填&lt;code>443&lt;/code>&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/ssl_proxy.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/ssl_proxy.png"
 width="1408"
 height="1176"
-srcset="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/ssl_proxy_hu9385ff29d123eaef73d64fd1ef688db4_954487_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/ssl_proxy_hu9385ff29d123eaef73d64fd1ef688db4_954487_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/ssl_proxy_hu9385ff29d123eaef73d64fd1ef688db4_954487_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/ssl_proxy_hu9385ff29d123eaef73d64fd1ef688db4_954487_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="ssl_proxy"
 class="gallery-image"
@@ -212,10 +212,10 @@ data-flex-basis="287px"
 &lt;ol>
 &lt;li>打开 &lt;strong>charles&lt;/strong>，选择菜单 &lt;code>Help -&amp;gt; SSL Proxying -&amp;gt; Save Charles Root Certificate&lt;/code>，并选择把证书保存为 &lt;code>.cer&lt;/code> 格式&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/1.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/1.png"
 width="1620"
 height="808"
-srcset="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/1_hudd5d61aff7f94b1e6ad1eb93fdacf997_349536_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/1_hudd5d61aff7f94b1e6ad1eb93fdacf997_349536_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/1_hudd5d61aff7f94b1e6ad1eb93fdacf997_349536_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/1_hudd5d61aff7f94b1e6ad1eb93fdacf997_349536_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="200"
@@ -227,30 +227,30 @@ data-flex-basis="481px"
 &lt;p>点击&lt;code>通用&lt;/code>，在&lt;code>名称&lt;/code>中填一个易于识别的名称，如&lt;code>charles proxy&lt;/code>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/2.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/2.png"
 width="1832"
 height="1220"
-srcset="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/2_hu42109b38b626d0cede6f1f90334f83b5_1241515_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/2_hu42109b38b626d0cede6f1f90334f83b5_1241515_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/2_hu42109b38b626d0cede6f1f90334f83b5_1241515_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/2_hu42109b38b626d0cede6f1f90334f83b5_1241515_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="150"
 data-flex-basis="360px"
 >&lt;/p>
 &lt;p>点击&lt;code>证书&lt;/code>，并把刚刚保存的 charles root 证书上传上去&lt;/p>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/3.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/3.png"
 width="1832"
 height="1220"
-srcset="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/3_hu42109b38b626d0cede6f1f90334f83b5_1206667_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/3_hu42109b38b626d0cede6f1f90334f83b5_1206667_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/3_hu42109b38b626d0cede6f1f90334f83b5_1206667_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/3_hu42109b38b626d0cede6f1f90334f83b5_1206667_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="150"
 data-flex-basis="360px"
 >&lt;/p>
 &lt;p>点击&lt;code>Wi-Fi&lt;/code>，填上 AppleTV 连接的 wifi 信息和 charles 代理信息&lt;/p>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/4.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/4.png"
 width="1832"
 height="1670"
-srcset="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/4_hue2f3b8746f0cc5ecc63a05b2db26589a_1581556_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/4_hue2f3b8746f0cc5ecc63a05b2db26589a_1581556_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/4_hue2f3b8746f0cc5ecc63a05b2db26589a_1581556_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/4_hue2f3b8746f0cc5ecc63a05b2db26589a_1581556_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="109"
@@ -261,18 +261,18 @@ data-flex-basis="263px"
 &lt;ol>
 &lt;li>点击 &lt;strong>Apple configurator&lt;/strong> 主菜单，选择&lt;code>配对设备&lt;/code>，把 &lt;code>AppleTV&lt;/code> 配置并连接上&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/5.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/5.png"
 width="552"
 height="640"
-srcset="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/5_hu83a8338785ad8bbb0a93cad6a53b3d51_139507_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/5_hu83a8338785ad8bbb0a93cad6a53b3d51_139507_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/5_hu83a8338785ad8bbb0a93cad6a53b3d51_139507_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/5_hu83a8338785ad8bbb0a93cad6a53b3d51_139507_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="86"
 data-flex-basis="207px"
->&lt;img src="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/6.png"
+>&lt;img src="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/6.png"
 width="1160"
 height="728"
-srcset="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/6_huebb36bc3bfe44e4cb28ade3e23c31819_649582_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/6_huebb36bc3bfe44e4cb28ade3e23c31819_649582_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/6_huebb36bc3bfe44e4cb28ade3e23c31819_649582_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/6_huebb36bc3bfe44e4cb28ade3e23c31819_649582_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="159"
@@ -281,10 +281,10 @@ data-flex-basis="382px"
 &lt;ol start="2">
 &lt;li>连接上后，&lt;strong>Apple configurator&lt;/strong> 主界面等一会会显示 AppleTV，右键选择 &lt;code>添加 -&amp;gt; 描述文件&lt;/code>，选择刚刚保存的描述文件&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/7.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/7.png"
 width="1972"
 height="1218"
-srcset="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/7_hu347e9fcf991c51822b535619a81cf78b_517017_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/7_hu347e9fcf991c51822b535619a81cf78b_517017_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/7_hu347e9fcf991c51822b535619a81cf78b_517017_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/7_hu347e9fcf991c51822b535619a81cf78b_517017_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="161"
@@ -293,10 +293,10 @@ data-flex-basis="388px"
 &lt;ol start="3">
 &lt;li>等一会 AppleTV 会提示安装描述文件，一路选择安装就可以&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv1.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv1.png"
 width="1244"
 height="702"
-srcset="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv1_hu9e7601cd7d518e2459b2e26fc21fb9bf_123632_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv1_hu9e7601cd7d518e2459b2e26fc21fb9bf_123632_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv1_hu9e7601cd7d518e2459b2e26fc21fb9bf_123632_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv1_hu9e7601cd7d518e2459b2e26fc21fb9bf_123632_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="177"
@@ -305,10 +305,10 @@ data-flex-basis="425px"
 &lt;ol start="4">
 &lt;li>安装完成后，会显示刚刚安装的描述文件&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv2.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv2.png"
 width="1244"
 height="702"
-srcset="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv2_hua1f44c6a77eb76decf16669d3280ca88_100363_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv2_hua1f44c6a77eb76decf16669d3280ca88_100363_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv2_hua1f44c6a77eb76decf16669d3280ca88_100363_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv2_hua1f44c6a77eb76decf16669d3280ca88_100363_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="177"
@@ -317,10 +317,10 @@ data-flex-basis="425px"
 &lt;ol start="5">
 &lt;li>进入 AppleTV 设置，选择&lt;code>通用 -&amp;gt; 关于 -&amp;gt; 证书信任设置&lt;/code>，把&lt;code>charles&lt;/code>证书设置为信任（假如&lt;code>关于&lt;/code>中没出现&lt;code>证书信任设置&lt;/code>，证明描述文件配置有误，导致描述文件没添加成功）&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv3.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv3.png"
 width="1244"
 height="702"
-srcset="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv3_hu1cb442105a5193c5aa586fa8d8025ec3_158194_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv3_hu1cb442105a5193c5aa586fa8d8025ec3_158194_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv3_hu1cb442105a5193c5aa586fa8d8025ec3_158194_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv3_hu1cb442105a5193c5aa586fa8d8025ec3_158194_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="177"
@@ -337,10 +337,10 @@ data-flex-basis="425px"
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://github.com/DualSubs/DualSubs/wiki/%E5%9C%A8Apple-TV-%28tvOS%29-%E4%B8%8A%E6%B7%BB%E5%8A%A0%E6%8F%8F%E8%BF%B0%E6%96%87%E4%BB%B6%E6%88%96MitM%E8%AF%81%E4%B9%A6" target="_blank" rel="noopener"
 >在Apple TV (tvOS) 上添加描述文件或MitM证书&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>常用ffmpeg命令</title><link>//blog.xenori.com/2022/12/ffmpeg-commands/</link><pubDate>Sat, 10 Dec 2022 11:27:10 +0800</pubDate><guid>//blog.xenori.com/2022/12/ffmpeg-commands/</guid><description>&lt;img src="//blog.xenori.com/2022/12/ffmpeg-commands/cover.png" alt="Featured image of post 常用ffmpeg命令" />&lt;h2 id="1-切割mkv并保留字幕">1. 切割mkv并保留字幕&lt;/h2>
+&lt;/ul></description></item><item><title>常用ffmpeg命令</title><link>https://blog.xenori.com/2022/12/ffmpeg-commands/</link><pubDate>Sat, 10 Dec 2022 11:27:10 +0800</pubDate><guid>https://blog.xenori.com/2022/12/ffmpeg-commands/</guid><description>&lt;img src="https://blog.xenori.com/2022/12/ffmpeg-commands/cover.png" alt="Featured image of post 常用ffmpeg命令" />&lt;h2 id="1-切割mkv并保留字幕">1. 切割mkv并保留字幕&lt;/h2>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 截取从30s开始的30s视频&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ffmpeg -ss 00:00:00 -t 00:00:30 -i input.mkv -c:v copy -c:a copy -c:s copy -map &lt;span class="m">0&lt;/span> output.mkv
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>wireshark常用抓包分析命令</title><link>//blog.xenori.com/2022/08/wireshark-commands/</link><pubDate>Wed, 10 Aug 2022 11:58:08 +0800</pubDate><guid>//blog.xenori.com/2022/08/wireshark-commands/</guid><description>&lt;img src="//blog.xenori.com/2022/08/wireshark-commands/cover.png" alt="Featured image of post wireshark常用抓包分析命令" />&lt;h2 id="服务器抓包">服务器抓包&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>wireshark常用抓包分析命令</title><link>https://blog.xenori.com/2022/08/wireshark-commands/</link><pubDate>Wed, 10 Aug 2022 11:58:08 +0800</pubDate><guid>https://blog.xenori.com/2022/08/wireshark-commands/</guid><description>&lt;img src="https://blog.xenori.com/2022/08/wireshark-commands/cover.png" alt="Featured image of post wireshark常用抓包分析命令" />&lt;h2 id="服务器抓包">服务器抓包&lt;/h2>
 &lt;h3 id="mac示例">Mac示例&lt;/h3>
 &lt;p>&lt;code>192.168.1.1&lt;/code>是服务器ip，&lt;code>192.168.2.1&lt;/code>是Mac ip，本命令在Mac终端执行&lt;/p>
 &lt;pre tabindex="0">&lt;code>ssh root@192.168.1.1 &amp;#39;tcpdump -i br-lan host 192.168.2.1 -s 0 -l -w -&amp;#39; | /Applications/Wireshark.app/Contents/MacOS/Wireshark -k -i -
@@ -350,7 +350,7 @@ data-flex-basis="425px"
 &lt;pre tabindex="0">&lt;code>http.request.method == &amp;#34;GET&amp;#34;
 &lt;/code>&lt;/pre>&lt;h3 id="查看http所有成功的请求">查看http所有成功的请求&lt;/h3>
 &lt;pre tabindex="0">&lt;code>http.response.code == 200
-&lt;/code>&lt;/pre></description></item><item><title>tvOS 开发实践 - SwiftUI篇</title><link>//blog.xenori.com/2022/06/tvos-development-practice-with-swiftui/</link><pubDate>Tue, 21 Jun 2022 11:58:08 +0800</pubDate><guid>//blog.xenori.com/2022/06/tvos-development-practice-with-swiftui/</guid><description>&lt;img src="//blog.xenori.com/2022/06/tvos-development-practice-with-swiftui/cover.png" alt="Featured image of post tvOS 开发实践 - SwiftUI篇" />&lt;h2 id="焦点非对齐移动">焦点非对齐移动&lt;/h2>
+&lt;/code>&lt;/pre></description></item><item><title>tvOS 开发实践 - SwiftUI篇</title><link>https://blog.xenori.com/2022/06/tvos-development-practice-with-swiftui/</link><pubDate>Tue, 21 Jun 2022 11:58:08 +0800</pubDate><guid>https://blog.xenori.com/2022/06/tvos-development-practice-with-swiftui/</guid><description>&lt;img src="https://blog.xenori.com/2022/06/tvos-development-practice-with-swiftui/cover.png" alt="Featured image of post tvOS 开发实践 - SwiftUI篇" />&lt;h2 id="焦点非对齐移动">焦点非对齐移动&lt;/h2>
 &lt;p>默认tvOS焦点移动是需要移动方向上有能获取焦点的button，假如button是左右靠边对齐的，就移动不上去。需要使用&lt;code>focusSetion&lt;/code>把button所在的整行范围变成可焦点识别的，才能自动移动到靠边的button上。&lt;/p>
 &lt;p>示例：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-swift" data-lang="swift">&lt;span class="line">&lt;span class="cl">&lt;span class="n">VStack&lt;/span> &lt;span class="p">{&lt;/span>
@@ -448,7 +448,7 @@ print(&amp;#34;long press&amp;#34;)
 }
 &lt;/code>&lt;/pre>&lt;h2 id="如何本地修改导入的swift-package">如何本地修改导入的swift package&lt;/h2>
 &lt;p>需要把swift package先下载到本地，然后在finder中找到文件夹，直接拖到xcode项目根目录中&lt;/p>
-&lt;p>这样修改本地代码，就可以在xcode中看到修改后的效果&lt;/p></description></item><item><title>caddy使用教程</title><link>//blog.xenori.com/2022/04/caddy-usage/</link><pubDate>Wed, 20 Apr 2022 11:58:08 +0800</pubDate><guid>//blog.xenori.com/2022/04/caddy-usage/</guid><description>&lt;img src="//blog.xenori.com/2022/04/caddy-usage/cover.jpeg" alt="Featured image of post caddy使用教程" />&lt;h2 id="安装caddy">安装caddy&lt;/h2>
+&lt;p>这样修改本地代码，就可以在xcode中看到修改后的效果&lt;/p></description></item><item><title>caddy使用教程</title><link>https://blog.xenori.com/2022/04/caddy-usage/</link><pubDate>Wed, 20 Apr 2022 11:58:08 +0800</pubDate><guid>https://blog.xenori.com/2022/04/caddy-usage/</guid><description>&lt;img src="https://blog.xenori.com/2022/04/caddy-usage/cover.jpeg" alt="Featured image of post caddy使用教程" />&lt;h2 id="安装caddy">安装caddy&lt;/h2>
 &lt;p>Mac:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">brew install caddy
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Windows:&lt;/p>
@@ -471,7 +471,7 @@ print(&amp;#34;long press&amp;#34;)
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s">EOF&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">caddy run
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>推荐</title><link>//blog.xenori.com/star/</link><pubDate>Mon, 05 Jul 2021 17:20:08 +0800</pubDate><guid>//blog.xenori.com/star/</guid><description>&lt;h1 id="windows应用">Windows应用&lt;/h1>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>推荐</title><link>https://blog.xenori.com/star/</link><pubDate>Mon, 05 Jul 2021 17:20:08 +0800</pubDate><guid>https://blog.xenori.com/star/</guid><description>&lt;h1 id="windows应用">Windows应用&lt;/h1>
 &lt;p>&lt;a class="link" href="https://github.com/MarcAnt01/Fluent-Screen-Recorder" target="_blank" rel="noopener"
 >&lt;strong>Fluent Screen Recorder&lt;/strong>&lt;/a>&lt;/p>
 &lt;blockquote>
@@ -567,7 +567,7 @@ print(&amp;#34;long press&amp;#34;)
 >&lt;strong>NTFS Tool&lt;/strong>&lt;/a>&lt;/p>
 &lt;blockquote>
 &lt;p>为MAC提供NTFS读写支持的一款免费软件&lt;/p>
-&lt;/blockquote></description></item><item><title>Windows下获取鼠标当前选中文字</title><link>//blog.xenori.com/2021/05/get-selected-text-in-windows/</link><pubDate>Thu, 13 May 2021 15:43:11 +0800</pubDate><guid>//blog.xenori.com/2021/05/get-selected-text-in-windows/</guid><description>&lt;img src="//blog.xenori.com/2021/05/get-selected-text-in-windows/cover.png" alt="Featured image of post Windows下获取鼠标当前选中文字" />&lt;p>Mac下的PopClip是我很喜欢的应用，一直想在Windows下找个替代的，但一直没找到，就准备自己简单实现一个。但研究后发现，Windows下是没有统一的API接口来获取当前用户选中文字的。商业化的&lt;a class="link" href="https://www.textcapture.com/gb/getword.htm" target="_blank" rel="noopener"
+&lt;/blockquote></description></item><item><title>Windows下获取鼠标当前选中文字</title><link>https://blog.xenori.com/2021/05/get-selected-text-in-windows/</link><pubDate>Thu, 13 May 2021 15:43:11 +0800</pubDate><guid>https://blog.xenori.com/2021/05/get-selected-text-in-windows/</guid><description>&lt;img src="https://blog.xenori.com/2021/05/get-selected-text-in-windows/cover.png" alt="Featured image of post Windows下获取鼠标当前选中文字" />&lt;p>Mac下的PopClip是我很喜欢的应用，一直想在Windows下找个替代的，但一直没找到，就准备自己简单实现一个。但研究后发现，Windows下是没有统一的API接口来获取当前用户选中文字的。商业化的&lt;a class="link" href="https://www.textcapture.com/gb/getword.htm" target="_blank" rel="noopener"
 >GetWord&lt;/a>组件可以实现，效果不错，但是这组件是不能免费在非商业应用中使用的。&lt;/p>
 &lt;p>经过一番网络查找后，发现有几个方案可以获取到，但都有优缺点，都不完美，需要把几种方案结合起来使用才能获取大部分情景下的选中文字。下面记录下这几种不同的实现方案：&lt;/p>
 &lt;h2 id="microsoft-ui-automation">Microsoft UI Automation&lt;/h2>
@@ -738,7 +738,7 @@ print(&amp;#34;long press&amp;#34;)
 &lt;div class="notices success" >&lt;blockquote>&lt;p>优点：支持复制的应用都可以支持，如excel，word等&lt;/p>
 &lt;/blockquote>&lt;/div>
 &lt;div class="notices " >&lt;blockquote>&lt;p>缺点：污染系统剪贴板，当用户有使用剪贴板历史软件时，会看到所有选中的文字&lt;/p>
-&lt;/blockquote>&lt;/div></description></item><item><title>常用git命令</title><link>//blog.xenori.com/2021/02/git-commands/</link><pubDate>Mon, 22 Feb 2021 16:58:10 +0800</pubDate><guid>//blog.xenori.com/2021/02/git-commands/</guid><description>&lt;img src="//blog.xenori.com/2021/02/git-commands/cover.png" alt="Featured image of post 常用git命令" />&lt;h2 id="创建分支">创建分支&lt;/h2>
+&lt;/blockquote>&lt;/div></description></item><item><title>常用git命令</title><link>https://blog.xenori.com/2021/02/git-commands/</link><pubDate>Mon, 22 Feb 2021 16:58:10 +0800</pubDate><guid>https://blog.xenori.com/2021/02/git-commands/</guid><description>&lt;img src="https://blog.xenori.com/2021/02/git-commands/cover.png" alt="Featured image of post 常用git命令" />&lt;h2 id="创建分支">创建分支&lt;/h2>
 &lt;h3 id="根据commit创建新分支">根据commit创建新分支&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">git checkout -b branch_name commit_id_xxx
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="回滚">回滚&lt;/h2>
@@ -802,7 +802,7 @@ print(&amp;#34;long press&amp;#34;)
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">git config --local credential.helper &lt;span class="s2">&amp;#34;&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># git地址要使用http协议&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git remote set-url origin https://xxx.com/xxx.git
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>常用adb命令</title><link>//blog.xenori.com/2020/09/adb-commands/</link><pubDate>Fri, 11 Sep 2020 11:27:10 +0800</pubDate><guid>//blog.xenori.com/2020/09/adb-commands/</guid><description>&lt;img src="//blog.xenori.com/2020/09/adb-commands/cover.png" alt="Featured image of post 常用adb命令" />&lt;h2 id="1-查看连接设备">1. 查看连接设备&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>常用adb命令</title><link>https://blog.xenori.com/2020/09/adb-commands/</link><pubDate>Fri, 11 Sep 2020 11:27:10 +0800</pubDate><guid>https://blog.xenori.com/2020/09/adb-commands/</guid><description>&lt;img src="https://blog.xenori.com/2020/09/adb-commands/cover.png" alt="Featured image of post 常用adb命令" />&lt;h2 id="1-查看连接设备">1. 查看连接设备&lt;/h2>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl"> adb devcies
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="2-当有多个连接设备时指定执行命令的设备">2. 当有多个连接设备时，指定执行命令的设备&lt;/h2>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">adb -s &amp;lt;deviceid&amp;gt; &amp;lt;commands&amp;gt;
@@ -819,35 +819,35 @@ print(&amp;#34;long press&amp;#34;)
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">adb logcat -v &lt;span class="nb">time&lt;/span> &lt;span class="p">|&lt;/span> grep AndroidRuntime
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="7-清空-app-日志">7. 清空 app 日志&lt;/h2>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">adb logcat -c
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>[更新]使用httpcanary在android 9以上版本抓取https网络请求包</title><link>//blog.xenori.com/2020/07/how-capture-https-network-packet/</link><pubDate>Wed, 01 Jul 2020 11:27:10 +0800</pubDate><guid>//blog.xenori.com/2020/07/how-capture-https-network-packet/</guid><description>&lt;img src="//blog.xenori.com/2020/07/how-capture-https-network-packet/cover.png" alt="Featured image of post [更新]使用httpcanary在android 9以上版本抓取https网络请求包" />&lt;p>在 android 9 以上版本，很多 app 都使用&lt;a class="link" href="https://github.com/moxie0/AndroidPinning" target="_blank" rel="noopener"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>[更新]使用httpcanary在android 9以上版本抓取https网络请求包</title><link>https://blog.xenori.com/2020/07/how-capture-https-network-packet/</link><pubDate>Wed, 01 Jul 2020 11:27:10 +0800</pubDate><guid>https://blog.xenori.com/2020/07/how-capture-https-network-packet/</guid><description>&lt;img src="https://blog.xenori.com/2020/07/how-capture-https-network-packet/cover.png" alt="Featured image of post [更新]使用httpcanary在android 9以上版本抓取https网络请求包" />&lt;p>在 android 9 以上版本，很多 app 都使用&lt;a class="link" href="https://github.com/moxie0/AndroidPinning" target="_blank" rel="noopener"
 >certificate pinning&lt;/a>技术来防止 https 中间人攻击，当 app 检测到证书不正确时，会自动断开网络请求，导致抓取不到 https 网络请求包。&lt;/p>
 &lt;p>要顺利抓到 https 请求包，需要借助VMOS来避开certificate pinning检测。&lt;/p>
 &lt;h2 id="1安装vmos">1、安装VMOS&lt;/h2>
 &lt;p>在网盘中下载&lt;code>VMOS&lt;/code>，安装完后，打开VMOS，点击右上方的&lt;code>+&lt;/code>按钮添加虚拟机，选择最下方的&lt;code>安卓7.1极客版&lt;/code>，下载并安装完成。
-&lt;img src="//blog.xenori.com/2020/07/how-capture-https-network-packet/1.jpg"
+&lt;img src="https://blog.xenori.com/2020/07/how-capture-https-network-packet/1.jpg"
 width="1080"
 height="2340"
-srcset="//blog.xenori.com/2020/07/how-capture-https-network-packet/1_hue87aad7deec839ffe0e011d351530d61_609274_480x0_resize_q75_box.jpg 480w, //blog.xenori.com/2020/07/how-capture-https-network-packet/1_hue87aad7deec839ffe0e011d351530d61_609274_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://blog.xenori.com/2020/07/how-capture-https-network-packet/1_hue87aad7deec839ffe0e011d351530d61_609274_480x0_resize_q75_box.jpg 480w, https://blog.xenori.com/2020/07/how-capture-https-network-packet/1_hue87aad7deec839ffe0e011d351530d61_609274_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="46"
 data-flex-basis="110px"
 >&lt;/p>
 &lt;p>回到首页，点击启动虚拟机，进入虚拟机
-&lt;img src="//blog.xenori.com/2020/07/how-capture-https-network-packet/2.jpg"
+&lt;img src="https://blog.xenori.com/2020/07/how-capture-https-network-packet/2.jpg"
 width="1080"
 height="2340"
-srcset="//blog.xenori.com/2020/07/how-capture-https-network-packet/2_hu736f23926ef0ac4ad33f71e9374fb3e8_349102_480x0_resize_q75_box.jpg 480w, //blog.xenori.com/2020/07/how-capture-https-network-packet/2_hu736f23926ef0ac4ad33f71e9374fb3e8_349102_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://blog.xenori.com/2020/07/how-capture-https-network-packet/2_hu736f23926ef0ac4ad33f71e9374fb3e8_349102_480x0_resize_q75_box.jpg 480w, https://blog.xenori.com/2020/07/how-capture-https-network-packet/2_hu736f23926ef0ac4ad33f71e9374fb3e8_349102_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="46"
 data-flex-basis="110px"
 >&lt;/p>
 &lt;p>点击下方的&lt;code>常用工具&lt;/code>-&amp;gt;&lt;code>应用&lt;/code>，找到需抓包的软件，点击后导入安装
-&lt;img src="//blog.xenori.com/2020/07/how-capture-https-network-packet/3.jpg"
+&lt;img src="https://blog.xenori.com/2020/07/how-capture-https-network-packet/3.jpg"
 width="1440"
 height="3120"
-srcset="//blog.xenori.com/2020/07/how-capture-https-network-packet/3_hu489ee71d1210f341130b295703923855_556682_480x0_resize_q75_box.jpg 480w, //blog.xenori.com/2020/07/how-capture-https-network-packet/3_hu489ee71d1210f341130b295703923855_556682_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://blog.xenori.com/2020/07/how-capture-https-network-packet/3_hu489ee71d1210f341130b295703923855_556682_480x0_resize_q75_box.jpg 480w, https://blog.xenori.com/2020/07/how-capture-https-network-packet/3_hu489ee71d1210f341130b295703923855_556682_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="46"
@@ -863,15 +863,15 @@ data-flex-basis="110px"
 >https://pan.baidu.com/s/11fx67kcqQOwxCLdItAXIxA&lt;/a> 提取码: ccbd&lt;/p>
 &lt;h2 id="3抓取-app-的-https-请求">3、抓取 app 的 https 请求&lt;/h2>
 &lt;p>先运行&lt;code>httpcanary&lt;/code>，再在&lt;code>VMOS&lt;/code>中访问需抓包的 app，就能看到所有 https 请求了，在&lt;code>VMOS&lt;/code>中运行的 app，是不会检测certificate pinning的&lt;/p>
-&lt;p>&lt;img src="//blog.xenori.com/2020/07/how-capture-https-network-packet/4.jpg"
+&lt;p>&lt;img src="https://blog.xenori.com/2020/07/how-capture-https-network-packet/4.jpg"
 width="1080"
 height="2340"
-srcset="//blog.xenori.com/2020/07/how-capture-https-network-packet/4_hu3131e9057829df9b315e2c9944db091d_461027_480x0_resize_q75_box.jpg 480w, //blog.xenori.com/2020/07/how-capture-https-network-packet/4_hu3131e9057829df9b315e2c9944db091d_461027_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://blog.xenori.com/2020/07/how-capture-https-network-packet/4_hu3131e9057829df9b315e2c9944db091d_461027_480x0_resize_q75_box.jpg 480w, https://blog.xenori.com/2020/07/how-capture-https-network-packet/4_hu3131e9057829df9b315e2c9944db091d_461027_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="46"
 data-flex-basis="110px"
->&lt;/p></description></item><item><title>各种开发相关的国内源</title><link>//blog.xenori.com/2020/05/china-speedup-source-for-develop/</link><pubDate>Thu, 07 May 2020 11:27:10 +0800</pubDate><guid>//blog.xenori.com/2020/05/china-speedup-source-for-develop/</guid><description>&lt;pre tabindex="0">&lt;code>阿里云统一官方镜像站：https://developer.aliyun.com/mirror/
+>&lt;/p></description></item><item><title>各种开发相关的国内源</title><link>https://blog.xenori.com/2020/05/china-speedup-source-for-develop/</link><pubDate>Thu, 07 May 2020 11:27:10 +0800</pubDate><guid>https://blog.xenori.com/2020/05/china-speedup-source-for-develop/</guid><description>&lt;pre tabindex="0">&lt;code>阿里云统一官方镜像站：https://developer.aliyun.com/mirror/
 包含了所有开源的国内镜像源，如homebrew，npm，pip，centos等，差不多满足所有开发需求， 🐂🍻
 &lt;/code>&lt;/pre>&lt;h2 id="go-get-国内源">go get 国内源&lt;/h2>
 &lt;p>七牛：https://goproxy.cn&lt;/p>
@@ -914,7 +914,7 @@ url &amp;#34;http://maven.aliyun.com/nexus/content/groups/public&amp;#34;
 }
 }
 }
-&lt;/code>&lt;/pre></description></item><item><title>解决npm 安装 electron 卡住，无法完成</title><link>//blog.xenori.com/2019/12/fix-npm-hang-when-install-electron/</link><pubDate>Thu, 26 Dec 2019 14:10:18 +0800</pubDate><guid>//blog.xenori.com/2019/12/fix-npm-hang-when-install-electron/</guid><description>&lt;p>使用最新的 node v12 安装 electron 时，发现每次跑到下面的语句就会挂住，无法继续安装：&lt;/p>
+&lt;/code>&lt;/pre></description></item><item><title>解决npm 安装 electron 卡住，无法完成</title><link>https://blog.xenori.com/2019/12/fix-npm-hang-when-install-electron/</link><pubDate>Thu, 26 Dec 2019 14:10:18 +0800</pubDate><guid>https://blog.xenori.com/2019/12/fix-npm-hang-when-install-electron/</guid><description>&lt;p>使用最新的 node v12 安装 electron 时，发现每次跑到下面的语句就会挂住，无法继续安装：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&amp;gt; electron@7.1.7 postinstall /Users/cxf/Dev/CapsIndicator/node_modules/electron
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt; node install.js
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>查看网上相关解决方案，发现是因为 npm 需要连接 github 下载 electron 安装包导致，安装包有 60M 左右，但从 github 下载却只有几 KB，所以感觉是卡住了。但改使用淘宝的 cnpm 发现还是会卡住，这是因为 electron 的包默认还是指向 github 下载，还有 electron 提供了修改下载地址的环境变量&lt;code>electron_mirror&lt;/code>，使用&lt;code>npm config&lt;/code>设置配置变量&lt;/p>
@@ -953,7 +953,7 @@ https://npm.taobao.org/mirrors/electron/7.1.7/electron-v7.1.7-linux-x64.zip
 loading="lazy"
 alt="UTOOLS1577342703742.png"
 >&lt;/p>
-&lt;/blockquote></description></item><item><title>使用gdb调试php的coredump文件</title><link>//blog.xenori.com/2015/07/2015-using-gdb-to-debug-php-coredump/</link><pubDate>Wed, 08 Jul 2015 01:33:35 +0800</pubDate><guid>//blog.xenori.com/2015/07/2015-using-gdb-to-debug-php-coredump/</guid><description>&lt;p>使用xhprof测试slim框架的性能时，发现php抛了Segment Fault错误，试着使用gdb查看是什么导致的。&lt;/p>
+&lt;/blockquote></description></item><item><title>使用gdb调试php的coredump文件</title><link>https://blog.xenori.com/2015/07/2015-using-gdb-to-debug-php-coredump/</link><pubDate>Wed, 08 Jul 2015 01:33:35 +0800</pubDate><guid>https://blog.xenori.com/2015/07/2015-using-gdb-to-debug-php-coredump/</guid><description>&lt;p>使用xhprof测试slim框架的性能时，发现php抛了Segment Fault错误，试着使用gdb查看是什么导致的。&lt;/p>
 &lt;h2 id="生成coredump文件">生成coredump文件&lt;/h2>
 &lt;p>要生成php的coredump文件需要对系统进行一些配置，具体查看：&lt;a class="link" href="https://rtcamp.com/tutorials/php/core-dump-php5-fpm/" target="_blank" rel="noopener"
 >Generating core-dump for php5-fpm&lt;/a>&lt;/p>
@@ -1055,7 +1055,7 @@ fast_ret = 0x7faf897c2d48, delayed_exception = 0x0, call_slots = 0x7faf8991dab0,
 &lt;p>&lt;a class="link" href="http://www.laruence.com/2011/06/23/2057.html" target="_blank" rel="noopener"
 >如何调试PHP的Core之获取基本信息&lt;/a>&lt;br>
 &lt;a class="link" href="http://www.php-internals.com/book/" target="_blank" rel="noopener"
->TIPI: 深入理解PHP内核&lt;/a>&lt;/p></description></item><item><title>解决cookie冲突导致的登录循环重定向</title><link>//blog.xenori.com/2015/04/loop-redirect-cause-by-cookie-conflict/</link><pubDate>Thu, 02 Apr 2015 00:21:00 +0000</pubDate><guid>//blog.xenori.com/2015/04/loop-redirect-cause-by-cookie-conflict/</guid><description>&lt;p>近排开发的一个后台系统（域名：admin.test.test.com）在接入公司统一SSO时，遇到了cookie冲突引起的登录循环重定向的bug。&lt;/p>
+>TIPI: 深入理解PHP内核&lt;/a>&lt;/p></description></item><item><title>解决cookie冲突导致的登录循环重定向</title><link>https://blog.xenori.com/2015/04/loop-redirect-cause-by-cookie-conflict/</link><pubDate>Thu, 02 Apr 2015 00:21:00 +0000</pubDate><guid>https://blog.xenori.com/2015/04/loop-redirect-cause-by-cookie-conflict/</guid><description>&lt;p>近排开发的一个后台系统（域名：admin.test.test.com）在接入公司统一SSO时，遇到了cookie冲突引起的登录循环重定向的bug。&lt;/p>
 &lt;p>公司有一个统一的SSO登录页面，我们开发的系统是跳转到该页面实现登录验证的。有用户反映登录不了，浏览器提示循环重定向了，查看用户浏览器发现有两个相同名称的session cookie：&lt;/p>
 &lt;pre tabindex="0">&lt;code>PHPSESSID=token1; path=/; expired=/; domain=.test.com
 PHPSESSID=token2; path=/; expired=/; domain=.test.test.com
@@ -1111,7 +1111,7 @@ written, and, historically, there have been servers that
 &lt;li>顺序与domain没关系&lt;br>
 RFC同时也说明并不是所有的浏览器都遵守这个，并且服务器也不应该依赖于cookie出现的顺序。&lt;/li>
 &lt;/ol>
-&lt;p>最后通过更改保存的session id名称来避免冲突解决问题，不过倒让我加深了cookie的了解。&lt;/p></description></item><item><title>在ubuntu中编译安装php</title><link>//blog.xenori.com/2013/11/install-php-from-source-in-ubuntu/</link><pubDate>Tue, 12 Nov 2013 01:07:00 +0800</pubDate><guid>//blog.xenori.com/2013/11/install-php-from-source-in-ubuntu/</guid><description>&lt;h3 id="预装编译环境">预装编译环境&lt;/h3>
+&lt;p>最后通过更改保存的session id名称来避免冲突解决问题，不过倒让我加深了cookie的了解。&lt;/p></description></item><item><title>在ubuntu中编译安装php</title><link>https://blog.xenori.com/2013/11/install-php-from-source-in-ubuntu/</link><pubDate>Tue, 12 Nov 2013 01:07:00 +0800</pubDate><guid>https://blog.xenori.com/2013/11/install-php-from-source-in-ubuntu/</guid><description>&lt;h3 id="预装编译环境">预装编译环境&lt;/h3>
 &lt;p>在ubuntu中执行下面命令安装编译依赖软件&lt;/p>
 &lt;pre tabindex="0">&lt;code>&amp;gt; sudo apt-get install \
 libxml2-dev \
@@ -1131,7 +1131,7 @@ libxslt-dev
 &lt;pre tabindex="0">&lt;code>&amp;gt; tar zxf php-5.5.5.tar.gz
 &amp;gt; cd php-5.5.5
 &amp;gt; sudo ./configurate ...
-&lt;/code>&lt;/pre>&lt;h3 id="安装apc和memcache扩展">安装apc和memcache扩展&lt;/h3></description></item><item><title>捕捉php中的fatal error错误</title><link>//blog.xenori.com/2013/11/handle-fatal-error-in-php/</link><pubDate>Mon, 04 Nov 2013 00:48:00 +0800</pubDate><guid>//blog.xenori.com/2013/11/handle-fatal-error-in-php/</guid><description>&lt;p>php中有三个函数与捕捉运行错误有关，分别是：&lt;/p>
+&lt;/code>&lt;/pre>&lt;h3 id="安装apc和memcache扩展">安装apc和memcache扩展&lt;/h3></description></item><item><title>捕捉php中的fatal error错误</title><link>https://blog.xenori.com/2013/11/handle-fatal-error-in-php/</link><pubDate>Mon, 04 Nov 2013 00:48:00 +0800</pubDate><guid>https://blog.xenori.com/2013/11/handle-fatal-error-in-php/</guid><description>&lt;p>php中有三个函数与捕捉运行错误有关，分别是：&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;a class="link" href="http://cn2.php.net/set_error_handler" target="_blank" rel="noopener"
 >set_error_handler&lt;/a>：运行错误处理函数，php内核执行代码出错时一般是触发error，而不是抛异常，抛异常是面向对象编程中用的&lt;/p>
@@ -1311,7 +1311,7 @@ include C(&amp;lsquo;TMPL_EXCEPTION_FILE&amp;rsquo;);
 exit;
 }&lt;/li>
 &lt;/ul>
-&lt;p>{% endcodeblock %}&lt;/p></description></item><item><title>更改rubygems镜像源</title><link>//blog.xenori.com/2013/07/change-rubygem-source/</link><pubDate>Mon, 15 Jul 2013 00:15:00 +0800</pubDate><guid>//blog.xenori.com/2013/07/change-rubygem-source/</guid><description>&lt;p>由于国内网络的原因，在安装ruby相关软件时，经常会在请求&lt;strong>rubygems.org&lt;/strong>下载时一直卡着不动，这时可以切换到淘宝的镜像源，速度嗖嗖的。&lt;/p>
+&lt;p>{% endcodeblock %}&lt;/p></description></item><item><title>更改rubygems镜像源</title><link>https://blog.xenori.com/2013/07/change-rubygem-source/</link><pubDate>Mon, 15 Jul 2013 00:15:00 +0800</pubDate><guid>https://blog.xenori.com/2013/07/change-rubygem-source/</guid><description>&lt;p>由于国内网络的原因，在安装ruby相关软件时，经常会在请求&lt;strong>rubygems.org&lt;/strong>下载时一直卡着不动，这时可以切换到淘宝的镜像源，速度嗖嗖的。&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;a class="link" href="http://ruby.taobao.org/" target="_blank" rel="noopener"
 >http://ruby.taobao.org/&lt;/a>&lt;/p>
@@ -1326,7 +1326,7 @@ exit;
 &lt;blockquote>
 &lt;p>&lt;a class="link" href="http://mirrors.163.com/" target="_blank" rel="noopener"
 >http://mirrors.163.com/&lt;/a>&lt;/p>
-&lt;/blockquote></description></item><item><title>使用scala+scaloid+IntelliJ IDEA 12开发android应用</title><link>//blog.xenori.com/2013/06/develop-android-with-intellij-idea-12-and-scaloid/</link><pubDate>Sun, 30 Jun 2013 15:41:00 +0800</pubDate><guid>//blog.xenori.com/2013/06/develop-android-with-intellij-idea-12-and-scaloid/</guid><description>&lt;h3 id="软件环境">软件环境&lt;/h3>
+&lt;/blockquote></description></item><item><title>使用scala+scaloid+IntelliJ IDEA 12开发android应用</title><link>https://blog.xenori.com/2013/06/develop-android-with-intellij-idea-12-and-scaloid/</link><pubDate>Sun, 30 Jun 2013 15:41:00 +0800</pubDate><guid>https://blog.xenori.com/2013/06/develop-android-with-intellij-idea-12-and-scaloid/</guid><description>&lt;h3 id="软件环境">软件环境&lt;/h3>
 &lt;p>继续下面的示例前，需要保证安装了下面的软件：&lt;/p>
 &lt;ul>
 &lt;li>JDK 1.6&lt;/li>
@@ -1383,7 +1383,7 @@ Android Dex: [hello-scaloid-maven] 48101 org.scaloid.common
 &lt;blockquote>
 &lt;p>Tip：假如你觉得android模拟器太慢，可以参考这篇文章做优化，速度提高10倍！！&lt;a class="link" href="https://www.virag.si/2012/10/speeding-up-android-emulator/" target="_blank" rel="noopener"
 >https://www.virag.si/2012/10/speeding-up-android-emulator/&lt;/a>&lt;/p>
-&lt;/blockquote></description></item><item><title>ubuntu日常操作</title><link>//blog.xenori.com/2012/10/ubuntu-daily/</link><pubDate>Tue, 30 Oct 2012 15:14:22 +0000</pubDate><guid>//blog.xenori.com/2012/10/ubuntu-daily/</guid><description>&lt;p>工作用电脑将会切换到ubuntu上了，记录下ubuntu常用操作。&lt;/p>
+&lt;/blockquote></description></item><item><title>ubuntu日常操作</title><link>https://blog.xenori.com/2012/10/ubuntu-daily/</link><pubDate>Tue, 30 Oct 2012 15:14:22 +0000</pubDate><guid>https://blog.xenori.com/2012/10/ubuntu-daily/</guid><description>&lt;p>工作用电脑将会切换到ubuntu上了，记录下ubuntu常用操作。&lt;/p>
 &lt;h3 id="升级到php54">===升级到php5.4===&lt;/h3>
 &lt;pre>&lt;code>For Ubuntu 11.10/12.04:
 sudo add-apt-repository ppa:ondrej/php5
@@ -1417,7 +1417,7 @@ passwd: password updated successfully
 &lt;h3 id="apache卸载nginx和php安装">===apache卸载、nginx和php安装===&lt;/h3>
 &lt;p>&lt;a class="link" href="http://cc.ecjtu.net/posts/php-5-4-Nginx-ubuntu-make-install" target="_blank" rel="noopener"
 >http://cc.ecjtu.net/posts/php-5-4-Nginx-ubuntu-make-install&lt;/a>&lt;/p>
-&lt;p>php交互命令行：http://phpsh.org/&lt;/p></description></item><item><title>利用IDA Pro反汇编程序</title><link>//blog.xenori.com/2012/05/disassembly-with-ida-pro/</link><pubDate>Wed, 16 May 2012 16:30:16 +0000</pubDate><guid>//blog.xenori.com/2012/05/disassembly-with-ida-pro/</guid><description>&lt;p>&lt;a class="link" href="http://www.hex-rays.com/products/ida/index.shtml" target="_blank" rel="noopener"
+&lt;p>php交互命令行：http://phpsh.org/&lt;/p></description></item><item><title>利用IDA Pro反汇编程序</title><link>https://blog.xenori.com/2012/05/disassembly-with-ida-pro/</link><pubDate>Wed, 16 May 2012 16:30:16 +0000</pubDate><guid>https://blog.xenori.com/2012/05/disassembly-with-ida-pro/</guid><description>&lt;p>&lt;a class="link" href="http://www.hex-rays.com/products/ida/index.shtml" target="_blank" rel="noopener"
 >IDA Pro&lt;/a>是一款强大的反汇编软件，特有的IDA视图和交叉引用，可以方便理解程序逻辑和快速定位代码片断，以方便修改。&lt;/p>
 &lt;p>&lt;img src="http://ww3.sinaimg.cn/large/7ce4a9f6gw1e5q1vme0mij20ly0ihdil.jpg"
 loading="lazy"
@@ -1526,7 +1526,7 @@ loading="lazy"
 &lt;a class="link" href="http://courses.engr.illinois.edu/ece390/resources/opcodes.html#Main" target="_blank" rel="noopener"
 >http://courses.engr.illinois.edu/ece390/resources/opcodes.html#Main&lt;/a>
 &lt;a class="link" href="http://faydoc.tripod.com/cpu/conventions.htm" target="_blank" rel="noopener"
->http://faydoc.tripod.com/cpu/conventions.htm&lt;/a>&lt;/p></description></item><item><title>使用Mono.Cecil更改程序集dll特性</title><link>//blog.xenori.com/2012/05/use-mono-cecil-to-change-dll-attribute/</link><pubDate>Sat, 12 May 2012 08:31:49 +0000</pubDate><guid>//blog.xenori.com/2012/05/use-mono-cecil-to-change-dll-attribute/</guid><description>&lt;p>工作中发现一个公共组件因为某个类不带有[Serializable]特性，导致保存到memcache时出错。刚好负责的同事请假不在，尝试了iLSpy反编译方法后，最后决定使用Mono.Cecil直接修改现成的程序集dll解决。&lt;/p>
+>http://faydoc.tripod.com/cpu/conventions.htm&lt;/a>&lt;/p></description></item><item><title>使用Mono.Cecil更改程序集dll特性</title><link>https://blog.xenori.com/2012/05/use-mono-cecil-to-change-dll-attribute/</link><pubDate>Sat, 12 May 2012 08:31:49 +0000</pubDate><guid>https://blog.xenori.com/2012/05/use-mono-cecil-to-change-dll-attribute/</guid><description>&lt;p>工作中发现一个公共组件因为某个类不带有[Serializable]特性，导致保存到memcache时出错。刚好负责的同事请假不在，尝试了iLSpy反编译方法后，最后决定使用Mono.Cecil直接修改现成的程序集dll解决。&lt;/p>
 &lt;p>示例代码如下：&lt;/p>
 &lt;pre>&lt;code>class Program
 {
@@ -1562,11 +1562,11 @@ Console.WriteLine(&amp;quot;new dll has save as {0}.&amp;quot;, newAsmFileName);
 >下载demo&lt;/a>&lt;/p>
 &lt;p>参考资料：
 &lt;a class="link" href="http://blog.zhaojie.me/2011/09/aspnet-mvc-dynamic-model-mono-cecil.html" target="_blank" rel="noopener"
->使用Mono.Cecil辅助ASP.NET MVC使用dynamic类型Model&lt;/a>&lt;/p></description></item><item><title>WinDbg入门</title><link>//blog.xenori.com/2012/04/windbg-tutorial/</link><pubDate>Tue, 24 Apr 2012 15:52:37 +0000</pubDate><guid>//blog.xenori.com/2012/04/windbg-tutorial/</guid><description>&lt;p>这是准备在每周技术分享会中分享的内容，但因为团队都忙于各种需求和服务器迁移，分享就一直搁置了。&lt;/p>
+>使用Mono.Cecil辅助ASP.NET MVC使用dynamic类型Model&lt;/a>&lt;/p></description></item><item><title>WinDbg入门</title><link>https://blog.xenori.com/2012/04/windbg-tutorial/</link><pubDate>Tue, 24 Apr 2012 15:52:37 +0000</pubDate><guid>https://blog.xenori.com/2012/04/windbg-tutorial/</guid><description>&lt;p>这是准备在每周技术分享会中分享的内容，但因为团队都忙于各种需求和服务器迁移，分享就一直搁置了。&lt;/p>
 &lt;p>这个ppt还是有用心做的，如ppt的背景，和debug流程的箭头都是使用photoshop偷下来的= =！&lt;/p>
 &lt;!-- raw HTML omitted -->
 &lt;p>示例程序：&lt;a class="link" href="http://bitxeno.me/wp-content/uploads/2012/04/WindbgTestExample.zip" target="_blank" rel="noopener"
->Download Example&lt;/a>&lt;/p></description></item><item><title>增加Android模拟器的"Internal Storage"容量</title><link>//blog.xenori.com/2012/04/android-internal-storage-space/</link><pubDate>Thu, 12 Apr 2012 16:06:07 +0000</pubDate><guid>//blog.xenori.com/2012/04/android-internal-storage-space/</guid><description>&lt;p>android模拟器默认的内部存储空间只有几十m，随便安装几个app就满了，google了下，发现AVD管理器是没有增加内部存储空间的设置的，要增加需要使用命令行来启动模拟器，命令如下：&lt;/p>
+>Download Example&lt;/a>&lt;/p></description></item><item><title>增加Android模拟器的"Internal Storage"容量</title><link>https://blog.xenori.com/2012/04/android-internal-storage-space/</link><pubDate>Thu, 12 Apr 2012 16:06:07 +0000</pubDate><guid>https://blog.xenori.com/2012/04/android-internal-storage-space/</guid><description>&lt;p>android模拟器默认的内部存储空间只有几十m，随便安装几个app就满了，google了下，发现AVD管理器是没有增加内部存储空间的设置的，要增加需要使用命令行来启动模拟器，命令如下：&lt;/p>
 &lt;pre>&lt;code>emulator -partition-size &amp;lt;size&amp;gt; -avd &amp;lt;virtual device name&amp;gt;
 &lt;/code>&lt;/pre>
 &lt;p>可以把命令保存到批处理bat文件中，以方便以后直接启动。&lt;/p>
@@ -1579,7 +1579,7 @@ alt="android avd"
 &lt;a class="link" href="https://groups.google.com/forum/?fromgroups#!topic/android-developers/wFO2HOcFiV4" target="_blank" rel="noopener"
 >https://groups.google.com/forum/?fromgroups#!topic/android-developers/wFO2HOcFiV4&lt;/a>
 &lt;a class="link" href="http://developer.android.com/guide/developing/tools/emulator.html#startup-options" target="_blank" rel="noopener"
->http://developer.android.com/guide/developing/tools/emulator.html#startup-options&lt;/a>&lt;/p></description></item><item><title>WSGI处理流程图</title><link>//blog.xenori.com/2012/03/a-diagram-to-explain-wsgi/</link><pubDate>Mon, 26 Mar 2012 15:41:54 +0000</pubDate><guid>//blog.xenori.com/2012/03/a-diagram-to-explain-wsgi/</guid><description>&lt;p>StackOverflow上看到的解释WSGI如何工作的图（一图胜千言）：
+>http://developer.android.com/guide/developing/tools/emulator.html#startup-options&lt;/a>&lt;/p></description></item><item><title>WSGI处理流程图</title><link>https://blog.xenori.com/2012/03/a-diagram-to-explain-wsgi/</link><pubDate>Mon, 26 Mar 2012 15:41:54 +0000</pubDate><guid>https://blog.xenori.com/2012/03/a-diagram-to-explain-wsgi/</guid><description>&lt;p>StackOverflow上看到的解释WSGI如何工作的图（一图胜千言）：
 &lt;img src="http://ww4.sinaimg.cn/large/7ce4a9f6gw1e5q1rcz9d8j21kw0pzjwx.jpg"
 loading="lazy"
 >&lt;/p>
@@ -1587,7 +1587,7 @@ loading="lazy"
 &lt;a class="link" href="http://stackoverflow.com/questions/1303118/looking-for-a-diagram-to-explain-wsgi" target="_blank" rel="noopener"
 >http://stackoverflow.com/questions/1303118/looking-for-a-diagram-to-explain-wsgi&lt;/a>
 &lt;a class="link" href="http://stackoverflow.com/questions/1303118/looking-for-a-diagram-to-explain-wsgi" target="_blank" rel="noopener"
->http://www.python.org/dev/peps/pep-0333/&lt;/a>&lt;/p></description></item><item><title>linux常用命令</title><link>//blog.xenori.com/2012/03/linux-useful-commands/</link><pubDate>Sat, 17 Mar 2012 09:42:44 +0000</pubDate><guid>//blog.xenori.com/2012/03/linux-useful-commands/</guid><description>&lt;p>在微博上发现已有同学整理了一个不错的linux命令文档：&lt;a class="link" href="http://115.com/file/c2rzrvw3#Unix-Linux" target="_blank" rel="noopener"
+>http://www.python.org/dev/peps/pep-0333/&lt;/a>&lt;/p></description></item><item><title>linux常用命令</title><link>https://blog.xenori.com/2012/03/linux-useful-commands/</link><pubDate>Sat, 17 Mar 2012 09:42:44 +0000</pubDate><guid>https://blog.xenori.com/2012/03/linux-useful-commands/</guid><description>&lt;p>在微博上发现已有同学整理了一个不错的linux命令文档：&lt;a class="link" href="http://115.com/file/c2rzrvw3#Unix-Linux" target="_blank" rel="noopener"
 >http://115.com/file/c2rzrvw3#Unix-Linux&lt;/a>
 这篇文章等遇到好的命令再继续更新。。。&lt;/p>
 &lt;p>文件命令 | 程序命令 | 网络命令 | 系统命令&lt;/p>
@@ -1638,7 +1638,7 @@ loading="lazy"
 &lt;/code>&lt;/pre>
 &lt;p>关机&lt;/p>
 &lt;pre>&lt;code>poweroff
-&lt;/code>&lt;/pre></description></item><item><title>如何查看哪些进程和服务器正在使用数据库</title><link>//blog.xenori.com/2012/03/find-who-connect-to-database/</link><pubDate>Sat, 17 Mar 2012 09:33:03 +0000</pubDate><guid>//blog.xenori.com/2012/03/find-who-connect-to-database/</guid><description>&lt;p>工作中有时会碰到需要迁移数据库的时候，如更换机房，更换新服务器等。迁移数据库最重要是要确保正在运行的程序不会因为漏更改连接字符串而导致程序报错。但有时维护的项目可能老旧，没有相关维护文档，还有一些使用该数据库的windows服务也可能遍布在其他服务器上，这时我们该如何找到所有正在使用该数据库的服务呢？&lt;/p>
+&lt;/code>&lt;/pre></description></item><item><title>如何查看哪些进程和服务器正在使用数据库</title><link>https://blog.xenori.com/2012/03/find-who-connect-to-database/</link><pubDate>Sat, 17 Mar 2012 09:33:03 +0000</pubDate><guid>https://blog.xenori.com/2012/03/find-who-connect-to-database/</guid><description>&lt;p>工作中有时会碰到需要迁移数据库的时候，如更换机房，更换新服务器等。迁移数据库最重要是要确保正在运行的程序不会因为漏更改连接字符串而导致程序报错。但有时维护的项目可能老旧，没有相关维护文档，还有一些使用该数据库的windows服务也可能遍布在其他服务器上，这时我们该如何找到所有正在使用该数据库的服务呢？&lt;/p>
 &lt;p>下面以windows服务器和Sql Server数据库为例，数据库服务器的ip是192.168.6.189，linux平台的思路差不多，只是命令有变化。&lt;/p>
 &lt;h3 id="1查看sql-server进程id">1、查看Sql Server进程ID&lt;/h3>
 &lt;p>打开任务管理器，点击“&lt;strong>查看&lt;/strong>-&amp;gt;&lt;strong>选择列&lt;/strong>”，勾选“&lt;strong>PID(进程标识符)&lt;/strong>”
@@ -1687,7 +1687,7 @@ W3WP.exe PID: 16304 AppPoolId: Special
 W3WP.exe PID: 8520 AppPoolId: test2.com
 W3WP.exe PID: 3164 AppPoolId: test3.com
 &lt;/code>&lt;/pre>
-&lt;p>iisapp命令会输出W3WP进程对应的应用程序池名，通过应用程序池名我们就能准备定位站点：）&lt;/p></description></item><item><title>了解IIS的主机名(Host Headers)配置项</title><link>//blog.xenori.com/2012/03/understanding-iis-host-headers/</link><pubDate>Sat, 03 Mar 2012 17:00:18 +0000</pubDate><guid>//blog.xenori.com/2012/03/understanding-iis-host-headers/</guid><description>&lt;p>IIS可以在一台服务器上配置多个web站点，每个站点通过ip地址、端口(port)和主机名(host)结合的标识符(ServerBindings Metabase)进行区分。标识字符串的格式如下：&lt;/p>
+&lt;p>iisapp命令会输出W3WP进程对应的应用程序池名，通过应用程序池名我们就能准备定位站点：）&lt;/p></description></item><item><title>了解IIS的主机名(Host Headers)配置项</title><link>https://blog.xenori.com/2012/03/understanding-iis-host-headers/</link><pubDate>Sat, 03 Mar 2012 17:00:18 +0000</pubDate><guid>https://blog.xenori.com/2012/03/understanding-iis-host-headers/</guid><description>&lt;p>IIS可以在一台服务器上配置多个web站点，每个站点通过ip地址、端口(port)和主机名(host)结合的标识符(ServerBindings Metabase)进行区分。标识字符串的格式如下：&lt;/p>
 &lt;pre>&lt;code>IP:Port:Hostname
 &lt;/code>&lt;/pre>
 &lt;p>上面的IP和Hostname是可选项，假如设定站点时不指定，表示匹配所有。&lt;/p>
@@ -1725,7 +1725,7 @@ Host: www.ilopia.com
 &lt;a class="link" href="http://www.it-notebook.org/iis/article/understanding_host_headers.htm" target="_blank" rel="noopener"
 >Understanding Host Headers in IIS&lt;/a>
 &lt;a class="link" href="http://www.it-notebook.org/iis/article/iis_multiple_websites.htm" target="_blank" rel="noopener"
->Using Host Headers to host multiple websites on IIS 6.0&lt;/a>&lt;/p></description></item><item><title>如何在ubuntu server 10.04中安装vmware tools</title><link>//blog.xenori.com/2012/02/how-to-install-vmware-tools-in-ubuntu-server/</link><pubDate>Sun, 19 Feb 2012 08:07:01 +0000</pubDate><guid>//blog.xenori.com/2012/02/how-to-install-vmware-tools-in-ubuntu-server/</guid><description>&lt;p>本人的ubuntu server版本是10.04.4，安装在免费的vmware player 4.0中。
+>Using Host Headers to host multiple websites on IIS 6.0&lt;/a>&lt;/p></description></item><item><title>如何在ubuntu server 10.04中安装vmware tools</title><link>https://blog.xenori.com/2012/02/how-to-install-vmware-tools-in-ubuntu-server/</link><pubDate>Sun, 19 Feb 2012 08:07:01 +0000</pubDate><guid>https://blog.xenori.com/2012/02/how-to-install-vmware-tools-in-ubuntu-server/</guid><description>&lt;p>本人的ubuntu server版本是10.04.4，安装在免费的vmware player 4.0中。
 安装vmware-tools需要gcc和对应的linux-headers进行编译，需先执行下面两个命令进行安装：&lt;/p>
 &lt;pre>&lt;code>sudo apt-get gcc
 sudo apt-get install build-essential linux-headers-$(uname -r)
@@ -1754,7 +1754,7 @@ sudo ./vmware-install.pl
 &lt;a class="link" href="http://ubuntuforums.org/showthread.php?t=1561822" target="_blank" rel="noopener"
 >http://ubuntuforums.org/showthread.php?t=1561822&lt;/a>
 &lt;a class="link" href="http://ubuntu-tutorials.com/2007/10/02/how-to-install-vmware-tools-on-ubuntu-guests/" target="_blank" rel="noopener"
->http://ubuntu-tutorials.com/2007/10/02/how-to-install-vmware-tools-on-ubuntu-guests/&lt;/a>&lt;/p></description></item><item><title>Molas——.NET依赖分离框架</title><link>//blog.xenori.com/2012/02/molas-isolation-framework/</link><pubDate>Tue, 14 Feb 2012 17:29:51 +0000</pubDate><guid>//blog.xenori.com/2012/02/molas-isolation-framework/</guid><description>&lt;p>&lt;img src="http://research.microsoft.com/en-us/projects/pex/pexweb.png"
+>http://ubuntu-tutorials.com/2007/10/02/how-to-install-vmware-tools-on-ubuntu-guests/&lt;/a>&lt;/p></description></item><item><title>Molas——.NET依赖分离框架</title><link>https://blog.xenori.com/2012/02/molas-isolation-framework/</link><pubDate>Tue, 14 Feb 2012 17:29:51 +0000</pubDate><guid>https://blog.xenori.com/2012/02/molas-isolation-framework/</guid><description>&lt;p>&lt;img src="http://research.microsoft.com/en-us/projects/pex/pexweb.png"
 loading="lazy"
 >&lt;a class="link" href="http://research.microsoft.com/en-us/projects/moles/" target="_blank" rel="noopener"
 >Moles&lt;/a>是由微软研究院(&lt;a class="link" href="http://research.microsoft.com" target="_blank" rel="noopener"
@@ -2036,7 +2036,7 @@ public MMyClass Bind(IEnumerable target) {
 &lt;p>&lt;a class="link" href="http://research.microsoft.com/en-us/projects/pex/molesmanual.pdf" target="_blank" rel="noopener"
 >http://research.microsoft.com/en-us/projects/pex/molesmanual.pdf&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="http://research.microsoft.com/en-us/projects/pex/documentation.aspx" target="_blank" rel="noopener"
->http://research.microsoft.com/en-us/projects/pex/documentation.aspx&lt;/a>&lt;/p></description></item><item><title>WinDbg常用命令</title><link>//blog.xenori.com/2012/02/windbg-useful-commands/</link><pubDate>Thu, 02 Feb 2012 03:33:37 +0000</pubDate><guid>//blog.xenori.com/2012/02/windbg-useful-commands/</guid><description>&lt;p>&lt;a class="link" href="2012/02/intro-to-windbg-for-dotnet-developers/" >前一篇文章&lt;/a>介绍了WinDbg入门，本篇主要介绍WinDbg常用命令和用法。&lt;/p>
+>http://research.microsoft.com/en-us/projects/pex/documentation.aspx&lt;/a>&lt;/p></description></item><item><title>WinDbg常用命令</title><link>https://blog.xenori.com/2012/02/windbg-useful-commands/</link><pubDate>Thu, 02 Feb 2012 03:33:37 +0000</pubDate><guid>https://blog.xenori.com/2012/02/windbg-useful-commands/</guid><description>&lt;p>&lt;a class="link" href="2012/02/intro-to-windbg-for-dotnet-developers/" >前一篇文章&lt;/a>介绍了WinDbg入门，本篇主要介绍WinDbg常用命令和用法。&lt;/p>
 &lt;p>调试程序的CPU满载问题，关键是要知道程序当前正在进行什么操作。假如我们在cpu满载时创建了一个dump文件，使用下面几个命令可以查看当前程序正在进行什么处理：
 &lt;strong>.time&lt;/strong>
 运行.time命令会显示时间相关的信息，如系统运行时间，进程运行时间和CPU花费在内核态和用户态的时间。&lt;/p>
@@ -2624,7 +2624,7 @@ MT Field Offset Type VT Attr Value Name
 &lt;a class="link" href="http://blogs.msdn.com/b/johan/archive/2007/11/26/getting-started-with-windbg-part-ii.aspx" target="_blank" rel="noopener"
 >Getting started with windbg - part I&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="http://blogs.msdn.com/b/johan/archive/2007/11/26/getting-started-with-windbg-part-ii.aspx" target="_blank" rel="noopener"
->Getting started with windbg - part II&lt;/a>&lt;/p></description></item><item><title>面向.NET开发人员的WinDbg入门教程</title><link>//blog.xenori.com/2012/02/intro-to-windbg-for-dotnet-developers/</link><pubDate>Wed, 01 Feb 2012 08:28:43 +0000</pubDate><guid>//blog.xenori.com/2012/02/intro-to-windbg-for-dotnet-developers/</guid><description>&lt;p>原文：&lt;a class="link" href="http://blogs.msdn.com/b/kaevans/archive/2011/04/11/intro-to-windbg-for-net-developers.aspx" target="_blank" rel="noopener"
+>Getting started with windbg - part II&lt;/a>&lt;/p></description></item><item><title>面向.NET开发人员的WinDbg入门教程</title><link>https://blog.xenori.com/2012/02/intro-to-windbg-for-dotnet-developers/</link><pubDate>Wed, 01 Feb 2012 08:28:43 +0000</pubDate><guid>https://blog.xenori.com/2012/02/intro-to-windbg-for-dotnet-developers/</guid><description>&lt;p>原文：&lt;a class="link" href="http://blogs.msdn.com/b/kaevans/archive/2011/04/11/intro-to-windbg-for-net-developers.aspx" target="_blank" rel="noopener"
 >http://blogs.msdn.com/b/kaevans/archive/2011/04/11/intro-to-windbg-for-net-developers.aspx
 &lt;/a> 翻译：bitxeno&lt;/p>
 &lt;p>当你的代码发布为产品后，无论是在其他人的电脑中运行，还是部署到服务器中，你通常不再能访问到它的程序文件，也不能观察到代码的当前运行情况和运行环境。当你的代码在新的环境运行时，有很多因素会影响到程序的运行情况，如服务器系统打了更新补丁，网络策略改变，防火墙规则限制，磁盘权限配置等等。当代码运行不正常时，你可能只能靠代码中各处输出的日志来判断运行情况。但只靠输出日志，你有时还是不能判断故障出现的原因。&lt;/p>
@@ -2939,7 +2939,7 @@ Child-SP RetAddr Call Site
 &lt;p>&lt;a class="link" href="http://blogs.msdn.com/b/johan/archive/2007/11/26/getting-started-with-windbg-part-ii.aspx" target="_blank" rel="noopener"
 >Getting started with windbg - part I&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="http://blogs.msdn.com/b/johan/archive/2007/11/26/getting-started-with-windbg-part-ii.aspx" target="_blank" rel="noopener"
->Getting started with windbg - part II&lt;/a>&lt;/p></description></item><item><title>利用HAProxy实现零停机更新维护</title><link>//blog.xenori.com/2012/01/zero-downtime-with-haproxy/</link><pubDate>Sat, 21 Jan 2012 08:04:49 +0000</pubDate><guid>//blog.xenori.com/2012/01/zero-downtime-with-haproxy/</guid><description>&lt;p>&lt;a class="link" href="http://haproxy.1wt.eu/" target="_blank" rel="noopener"
+>Getting started with windbg - part II&lt;/a>&lt;/p></description></item><item><title>利用HAProxy实现零停机更新维护</title><link>https://blog.xenori.com/2012/01/zero-downtime-with-haproxy/</link><pubDate>Sat, 21 Jan 2012 08:04:49 +0000</pubDate><guid>https://blog.xenori.com/2012/01/zero-downtime-with-haproxy/</guid><description>&lt;p>&lt;a class="link" href="http://haproxy.1wt.eu/" target="_blank" rel="noopener"
 >HAProxy&lt;/a>是linux平台上的负载均衡软件，有完善的服务器健康检测和会话(session)保持功能，性能高，支持tcp和http网络连接分发。&lt;/p>
 &lt;h2 id="问题起因">&lt;strong>问题起因&lt;/strong>&lt;/h2>
 &lt;p>入公司一年，我发现在ASP.NET网站上部署更新时，经常会遇到下面这样的烦恼：&lt;/p>
@@ -3056,7 +3056,7 @@ alt="HAProxy"
 &lt;a class="link" href="http://www.igvita.com/2008/12/02/zero-downtime-restarts-with-haproxy/?utm_source=feedburner&amp;amp;utm_campaign=Feed%3A&amp;#43;igvita&amp;#43;%28igvita.com%29&amp;amp;utm_content=feed" target="_blank" rel="noopener"
 >Zero-Downtime Restarts with HAProxy&lt;/a>
 &lt;a class="link" href="http://haproxy.1wt.eu/download/1.3/doc/architecture.txt" target="_blank" rel="noopener"
->HAProxy Architecture  Guide&lt;/a>&lt;/p></description></item><item><title>利用Eclipse+Scala搭建android开发环境</title><link>//blog.xenori.com/2012/01/use-eclipse-scala-develop-android/</link><pubDate>Sat, 21 Jan 2012 07:06:00 +0000</pubDate><guid>//blog.xenori.com/2012/01/use-eclipse-scala-develop-android/</guid><description>&lt;p>&lt;strong>1、安装JAVA SDK&lt;/strong>&lt;/p>
+>HAProxy Architecture  Guide&lt;/a>&lt;/p></description></item><item><title>利用Eclipse+Scala搭建android开发环境</title><link>https://blog.xenori.com/2012/01/use-eclipse-scala-develop-android/</link><pubDate>Sat, 21 Jan 2012 07:06:00 +0000</pubDate><guid>https://blog.xenori.com/2012/01/use-eclipse-scala-develop-android/</guid><description>&lt;p>&lt;strong>1、安装JAVA SDK&lt;/strong>&lt;/p>
 &lt;p>到官网（&lt;a class="link" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="noopener"
 >http://www.oracle.com/technetwork/java/javase/downloads/index.html&lt;/a> ）下载最新的javase sdk，推荐安装1.6版。安装完成后，在windows环境变量中添加[JAVA_HOME]，并把路径指向java sdk的安装根目录。&lt;/p>
 &lt;p>&lt;img src="http://images.cnblogs.com/cnblogs_com/vento/scala-android-1.jpg"
@@ -3198,7 +3198,7 @@ override def onClick(v: View) = func(v)
 &lt;p>&lt;a class="link" href="http://www.nevercertain.com/2011/02/18/scala-android-intellij-win-part-3.html" target="_blank" rel="noopener"
 >Building Android Apps with Scala - IntelliJ &lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="http://lamp.epfl.ch/~michelou/android/" target="_blank" rel="noopener"
->Exploring Android With Scala&lt;/a>&lt;/p></description></item><item><title>使windows服务安装名称可配置</title><link>//blog.xenori.com/2012/01/config-windows-services-install-name/</link><pubDate>Thu, 12 Jan 2012 07:42:04 +0000</pubDate><guid>//blog.xenori.com/2012/01/config-windows-services-install-name/</guid><description>&lt;p>有时，我们安装的windows服务可能是个框架，在同一服务器上可能服务于不同的系统，为了使服务名称不冲突，需要把服务名称更改为可配置。
+>Exploring Android With Scala&lt;/a>&lt;/p></description></item><item><title>使windows服务安装名称可配置</title><link>https://blog.xenori.com/2012/01/config-windows-services-install-name/</link><pubDate>Thu, 12 Jan 2012 07:42:04 +0000</pubDate><guid>https://blog.xenori.com/2012/01/config-windows-services-install-name/</guid><description>&lt;p>有时，我们安装的windows服务可能是个框架，在同一服务器上可能服务于不同的系统，为了使服务名称不冲突，需要把服务名称更改为可配置。
 因为ServiceInstaller能直接设置安装服务的名称和描述，所以很容易就能写出下面的代码：&lt;/p>
 &lt;pre>&lt;code>serviceInstaller.ServiceName = ConfigurationManager.AppSetting[&amp;quot;ServiceName&amp;quot;];
 serviceInstaller.Description = ConfigurationManager.AppSetting[&amp;quot;ServiceDescription&amp;quot;];
@@ -3224,7 +3224,7 @@ var configPath = Path.Combine(targetDirectory, &amp;quot;Service.exe&amp;quot;);
 var config = ConfigurationManager.OpenExeConfiguration(configPath);
 serviceInstaller.ServiceName = config.AppSettings.Settings[&amp;quot;ServiceName&amp;quot;].Value;
 serviceInstaller.Description = config.AppSettings.Settings[&amp;quot;ServiceDescription&amp;quot;].Value;
-&lt;/code>&lt;/pre></description></item><item><title>获取客户端的真实ip代码改进</title><link>//blog.xenori.com/2012/01/get-client-ip/</link><pubDate>Mon, 09 Jan 2012 07:39:49 +0000</pubDate><guid>//blog.xenori.com/2012/01/get-client-ip/</guid><description>&lt;p>现在系统中常用的获取客户端真实ip的代码如下：&lt;/p>
+&lt;/code>&lt;/pre></description></item><item><title>获取客户端的真实ip代码改进</title><link>https://blog.xenori.com/2012/01/get-client-ip/</link><pubDate>Mon, 09 Jan 2012 07:39:49 +0000</pubDate><guid>https://blog.xenori.com/2012/01/get-client-ip/</guid><description>&lt;p>现在系统中常用的获取客户端真实ip的代码如下：&lt;/p>
 &lt;pre>&lt;code>// 获取IP地址
 protected string GetIPAddress()
 {
@@ -3270,7 +3270,7 @@ loading="lazy"
 {3221225984,3221226239}, //{&amp;quot;192.0.2.0&amp;quot;,&amp;quot;192.0.2.255&amp;quot;},
 {3232235520,3232301055}, //{&amp;quot;192.168.0.0&amp;quot;,&amp;quot;192.168.255.255&amp;quot;},
 {4294967040,4294967295}}; //{&amp;quot;255.255.255.0&amp;quot;,&amp;quot;255.255.255.255&amp;quot;}
-&lt;/code>&lt;/pre></description></item><item><title>通过新浪接口抓取ip库</title><link>//blog.xenori.com/2012/01/crawl-sina-ip-data/</link><pubDate>Mon, 09 Jan 2012 07:23:24 +0000</pubDate><guid>//blog.xenori.com/2012/01/crawl-sina-ip-data/</guid><description>&lt;p>新浪有开放ip查询的接口（&lt;a class="link" href="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=json&amp;amp;ip=123.124.2.85" target="_blank" rel="noopener"
+&lt;/code>&lt;/pre></description></item><item><title>通过新浪接口抓取ip库</title><link>https://blog.xenori.com/2012/01/crawl-sina-ip-data/</link><pubDate>Mon, 09 Jan 2012 07:23:24 +0000</pubDate><guid>https://blog.xenori.com/2012/01/crawl-sina-ip-data/</guid><description>&lt;p>新浪有开放ip查询的接口（&lt;a class="link" href="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=json&amp;amp;ip=123.124.2.85" target="_blank" rel="noopener"
 >http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=json&amp;amp;ip=123.124.2.85&lt;/a>），通过不断查询就能抓取到ip信息。不过要遍历所有的ip地址不现实，数据存储和查询都是问题，一般我们面对的是中国的用户，只需要遍历抓取下中国范围的ip信息就行，而且ip地址最后一位的256个ip一般分配到同一地区，所以最后一位只需遍历.0的ip就可以了。
 目前ip4地址已经分配完，中国的ip段可以在以下网址找到：
 &lt;a class="link" href="https://www.countryipblocks.net/e_country_data/CN_range.txt" target="_blank" rel="noopener"
@@ -3320,7 +3320,7 @@ return string.Format(&amp;quot;{0}.{1}.{2}.0&amp;quot;, p0, p1, p2);
 从新浪接口查询回来的数据，有一部分国家和省市都是空的，还有一部分国家是美国等，这部分数据需要修正下。数据修正可以查询ip138网站，它的数据来源是APNIC，比较新，请求地址如下（&lt;a class="link" href="http://www.ip138.com/ips8.asp?action=2&amp;amp;ip=223.72.166.0" target="_blank" rel="noopener"
 >http://www.ip138.com/ips8.asp?action=2&amp;amp;ip=223.72.166.0&lt;/a>）。把请求回来的内容用正则解析并update到数据库就可以了。&lt;/p>
 &lt;p>&lt;strong>进一步减少数据大小：&lt;/strong>
-新浪接口返回的内容都会带有start和end的ip段，表示ip段中的ip都是属于同一地区。可以把start和end的ip转换为int值，再把int表示的ip段和地区信息保存到另一张表中。查询用户ip所属时，只需把用户ip也转换为int值，再找出int值所在的ip段对应的地区就可以了。&lt;/p></description></item><item><title>开源线程池组件SmartThreadPool</title><link>//blog.xenori.com/2012/01/smartthreadpool/</link><pubDate>Mon, 09 Jan 2012 07:11:38 +0000</pubDate><guid>//blog.xenori.com/2012/01/smartthreadpool/</guid><description>&lt;p>1、为什么需要使用线程池(Thread Pool）&lt;/p>
+新浪接口返回的内容都会带有start和end的ip段，表示ip段中的ip都是属于同一地区。可以把start和end的ip转换为int值，再把int表示的ip段和地区信息保存到另一张表中。查询用户ip所属时，只需把用户ip也转换为int值，再找出int值所在的ip段对应的地区就可以了。&lt;/p></description></item><item><title>开源线程池组件SmartThreadPool</title><link>https://blog.xenori.com/2012/01/smartthreadpool/</link><pubDate>Mon, 09 Jan 2012 07:11:38 +0000</pubDate><guid>https://blog.xenori.com/2012/01/smartthreadpool/</guid><description>&lt;p>1、为什么需要使用线程池(Thread Pool）&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>**减少线程间上下文切换。**线程执行一定的时间片后，系统会自动把cpu切换给另一个线程使用，这时还需要保存当前的线程上下文状态，并加载新线程的上下文状态。当程序中有大量的线程时，每个线程分得的时间片会越来越少，可能会出现线程未处理多少操作，就需要切换到另一线程，这样频繁的线程间上下文切换会花费大量的cpu时间。&lt;/p>
@@ -3419,7 +3419,7 @@ Console.WriteLine(result2.Result);
 &lt;a class="link" href="http://smartthreadpool.codeplex.com/" target="_blank" rel="noopener"
 >http://smartthreadpool.codeplex.com/&lt;/a>
 &lt;a class="link" href="http://www.albahari.com/threading/" target="_blank" rel="noopener"
->http://www.albahari.com/threading/&lt;/a>&lt;/p></description></item><item><title>小巧方便的ORM类库——PetaPoco</title><link>//blog.xenori.com/2012/01/petapoco/</link><pubDate>Mon, 09 Jan 2012 05:11:52 +0000</pubDate><guid>//blog.xenori.com/2012/01/petapoco/</guid><description>&lt;p>&lt;a class="link" href="http://www.toptensoftware.com/petapoco/" target="_blank" rel="noopener"
+>http://www.albahari.com/threading/&lt;/a>&lt;/p></description></item><item><title>小巧方便的ORM类库——PetaPoco</title><link>https://blog.xenori.com/2012/01/petapoco/</link><pubDate>Mon, 09 Jan 2012 05:11:52 +0000</pubDate><guid>https://blog.xenori.com/2012/01/petapoco/</guid><description>&lt;p>&lt;a class="link" href="http://www.toptensoftware.com/petapoco/" target="_blank" rel="noopener"
 >PetaPoco&lt;/a>是一个简单轻巧的orm开源类库，全部功能只有一个文件，可以很方便集成到项目中。代替SqlHelper辅助类的不二选择。。。&lt;/p>
 &lt;pre>&lt;code>主要功能包括：
 - 映射实体类，支持enum，Nullable等类型，可同时映射多个实例。
@@ -3483,7 +3483,7 @@ var a = db.SingleOrDefault&amp;lt;article&amp;gt;(&amp;quot;WHERE title=@0&amp;q
 &lt;a class="link" href="http://code.google.com/p/dapper-dot-net/" target="_blank" rel="noopener"
 >http://code.google.com/p/dapper-dot-net/&lt;/a>
 &lt;a class="link" href="http://www.toptensoftware.com/petapoco/" target="_blank" rel="noopener"
->http://www.toptensoftware.com/petapoco/&lt;/a>&lt;/p></description></item><item><title>门户网站的ip查询接口</title><link>//blog.xenori.com/2011/12/ip-lookup/</link><pubDate>Sun, 25 Dec 2011 06:09:12 +0000</pubDate><guid>//blog.xenori.com/2011/12/ip-lookup/</guid><description>&lt;p>腾讯：&lt;a class="link" href="http://ip.qq.com/cgi-bin/searchip?searchip1=121.236.225.37" target="_blank" rel="noopener"
+>http://www.toptensoftware.com/petapoco/&lt;/a>&lt;/p></description></item><item><title>门户网站的ip查询接口</title><link>https://blog.xenori.com/2011/12/ip-lookup/</link><pubDate>Sun, 25 Dec 2011 06:09:12 +0000</pubDate><guid>https://blog.xenori.com/2011/12/ip-lookup/</guid><description>&lt;p>腾讯：&lt;a class="link" href="http://ip.qq.com/cgi-bin/searchip?searchip1=121.236.225.37" target="_blank" rel="noopener"
 >http://ip.qq.com/cgi-bin/searchip?searchip1=121.236.225.37&lt;/a>
 现在只能通过解析页面内容到取得&lt;/p>
 &lt;p>新浪：&lt;a class="link" href="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=json&amp;amp;ip=123.124.2.85" target="_blank" rel="noopener"
@@ -3494,7 +3494,7 @@ var a = db.SingleOrDefault&amp;lt;article&amp;gt;(&amp;quot;WHERE title=@0&amp;q
 &lt;a class="link" href="http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest" target="_blank" rel="noopener"
 >http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest&lt;/a>
 &lt;a class="link" href="http://www.countryipblocks.net/country-blocks/ip-range-format/" target="_blank" rel="noopener"
->http://www.countryipblocks.net/country-blocks/ip-range-format/&lt;/a>&lt;/p></description></item><item><title>GoAgent翻了个墙</title><link>//blog.xenori.com/2011/12/open-the-doo/</link><pubDate>Sat, 10 Dec 2011 09:19:25 +0000</pubDate><guid>//blog.xenori.com/2011/12/open-the-doo/</guid><description>&lt;p>GoAgent是个很强的Appspot代理程序，看youtube毫无压力=w=，chrome+SwitchySharp也很好用，下面是个简单的部署步骤：
+>http://www.countryipblocks.net/country-blocks/ip-range-format/&lt;/a>&lt;/p></description></item><item><title>GoAgent翻了个墙</title><link>https://blog.xenori.com/2011/12/open-the-doo/</link><pubDate>Sat, 10 Dec 2011 09:19:25 +0000</pubDate><guid>https://blog.xenori.com/2011/12/open-the-doo/</guid><description>&lt;p>GoAgent是个很强的Appspot代理程序，看youtube毫无压力=w=，chrome+SwitchySharp也很好用，下面是个简单的部署步骤：
 1、到http://code.google.com/p/goagent/下载最新版的GoAgent
 2、首选dns要设为8.8.8.8
 3、到http://code.google.com/p/smarthosts/下载最新程序更新下hosts
@@ -3507,11 +3507,11 @@ alt="switchsharp rule setting"
 6、have fun!&lt;/p>
 &lt;p>更详细教程：
 &lt;a class="link" href="http://maolihui.com/goagent-detailed-version-of-the-tutorial.html" target="_blank" rel="noopener"
->http://maolihui.com/goagent-detailed-version-of-the-tutorial.html&lt;/a>&lt;/p></description></item><item><title>Lucene实践</title><link>//blog.xenori.com/2011/12/lucene-knowledge/</link><pubDate>Wed, 07 Dec 2011 15:51:09 +0000</pubDate><guid>//blog.xenori.com/2011/12/lucene-knowledge/</guid><description>&lt;p>这是内部技术分享的ppt&lt;/p>
-&lt;!-- raw HTML omitted --></description></item><item><title>xp3中运行s60 v3模拟器，出现闪退问题的解决方法</title><link>//blog.xenori.com/2011/11/s60emulator-run-terminate/</link><pubDate>Mon, 28 Nov 2011 14:02:21 +0000</pubDate><guid>//blog.xenori.com/2011/11/s60emulator-run-terminate/</guid><description>&lt;p>在我的xp3上安装S60_3rd_FP2_SDK_v1.1版本模块器，在运行时会出现闪退的问题（在xp2上好像没这问题)，解决方法如下：&lt;/p>
+>http://maolihui.com/goagent-detailed-version-of-the-tutorial.html&lt;/a>&lt;/p></description></item><item><title>Lucene实践</title><link>https://blog.xenori.com/2011/12/lucene-knowledge/</link><pubDate>Wed, 07 Dec 2011 15:51:09 +0000</pubDate><guid>https://blog.xenori.com/2011/12/lucene-knowledge/</guid><description>&lt;p>这是内部技术分享的ppt&lt;/p>
+&lt;!-- raw HTML omitted --></description></item><item><title>xp3中运行s60 v3模拟器，出现闪退问题的解决方法</title><link>https://blog.xenori.com/2011/11/s60emulator-run-terminate/</link><pubDate>Mon, 28 Nov 2011 14:02:21 +0000</pubDate><guid>https://blog.xenori.com/2011/11/s60emulator-run-terminate/</guid><description>&lt;p>在我的xp3上安装S60_3rd_FP2_SDK_v1.1版本模块器，在运行时会出现闪退的问题（在xp2上好像没这问题)，解决方法如下：&lt;/p>
 &lt;p>进入“我的电脑-》属性-》高级-》性能（设置）-》数据执行保护”，把epoc.exe程序加入例外中就可以了：
 &lt;img src="http://ww4.sinaimg.cn/large/7ce4a9f6gw1e5q0qq4u7hj20el0fuabm.jpg"
 loading="lazy"
 alt="nokia s60 v3 fp1"
 >&lt;/p>
-&lt;p>假如你想查看nokia模拟器运行日志，可以在运行中打开“%temp%”当前用户临时文件夹，再搜索“epocwind.out”就是了&lt;/p></description></item><item><title>项目</title><link>//blog.xenori.com/%E9%A1%B9%E7%9B%AE/</link><pubDate>Fri, 24 Dec 2010 00:20:08 +0800</pubDate><guid>//blog.xenori.com/%E9%A1%B9%E7%9B%AE/</guid><description>&lt;h1 id="施工中">施工中。。。&lt;/h1></description></item></channel></rss>
+&lt;p>假如你想查看nokia模拟器运行日志，可以在运行中打开“%temp%”当前用户临时文件夹，再搜索“epocwind.out”就是了&lt;/p></description></item><item><title>项目</title><link>https://blog.xenori.com/%E9%A1%B9%E7%9B%AE/</link><pubDate>Fri, 24 Dec 2010 00:20:08 +0800</pubDate><guid>https://blog.xenori.com/%E9%A1%B9%E7%9B%AE/</guid><description>&lt;h1 id="施工中">施工中。。。&lt;/h1></description></item></channel></rss>

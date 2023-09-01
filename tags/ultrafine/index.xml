@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>UltraFine on bitxeno's notes</title><link>//blog.xenori.com/tags/ultrafine/</link><description>Recent content in UltraFine on bitxeno's notes</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 11 Sep 2020 13:07:10 +0800</lastBuildDate><atom:link href="//blog.xenori.com/tags/ultrafine/index.xml" rel="self" type="application/rss+xml"/><item><title>Windows下如何连接LG UltraFine 4k显示器</title><link>//blog.xenori.com/2020/09/connect-ultrafine-with-windows/</link><pubDate>Fri, 11 Sep 2020 13:07:10 +0800</pubDate><guid>//blog.xenori.com/2020/09/connect-ultrafine-with-windows/</guid><description>&lt;img src="//blog.xenori.com/2020/09/connect-ultrafine-with-windows/cover.jpg" alt="Featured image of post Windows下如何连接LG UltraFine 4k显示器" />&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>UltraFine on bitxeno's notes</title><link>https://blog.xenori.com/tags/ultrafine/</link><description>Recent content in UltraFine on bitxeno's notes</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 11 Sep 2020 13:07:10 +0800</lastBuildDate><atom:link href="https://blog.xenori.com/tags/ultrafine/index.xml" rel="self" type="application/rss+xml"/><item><title>Windows下如何连接LG UltraFine 4k显示器</title><link>https://blog.xenori.com/2020/09/connect-ultrafine-with-windows/</link><pubDate>Fri, 11 Sep 2020 13:07:10 +0800</pubDate><guid>https://blog.xenori.com/2020/09/connect-ultrafine-with-windows/</guid><description>&lt;img src="https://blog.xenori.com/2020/09/connect-ultrafine-with-windows/cover.jpg" alt="Featured image of post Windows下如何连接LG UltraFine 4k显示器" />&lt;blockquote>
 &lt;p>19年时为了开发时字体显示能有更好的效果，所以准备入手一台 4K 的显示器。经过一系列的筛查比较后，最后买了苹果官网的 LG UltraFine 4k 显示器，选它的原因只要有两点：&lt;/p>
 &lt;ol>
 &lt;li>带 type-c 的雷电3接口，方便笔记本 Macbook Pro 可以直连输出&lt;/li>
@@ -40,10 +40,10 @@ alt="cca4111efe3fd276.jpg"
 &lt;p>另外，假如你想买支持雷电 3的主板直连 UltraFine 的话，记得确认下主板是否带&lt;code>DP IN&lt;/code>的接口，像&lt;a class="link" href="https://item.jd.com/100007020310.html" target="_blank" rel="noopener"
 >华擎（ASRock）X570 Phantom Gaming&lt;/a>这种的。因为只有带了&lt;code>DP IN&lt;/code>接口，才能把独立显卡的信号转接到主板雷电3接口，以便输出图像到 UltraFine，要不然主板的雷电3就只能支持cpu的核显输出的，不支持独立显卡。&lt;/p>
 &lt;h2 id="戴尔dell-upd2018">戴尔(DELL) UPD2018&lt;/h2>
-&lt;p>&lt;img src="//blog.xenori.com/2020/09/connect-ultrafine-with-windows/upd2018.jpg"
+&lt;p>&lt;img src="https://blog.xenori.com/2020/09/connect-ultrafine-with-windows/upd2018.jpg"
 width="750"
 height="500"
-srcset="//blog.xenori.com/2020/09/connect-ultrafine-with-windows/upd2018_hu231bf709c668f3555c0bf39f630ce0d0_56452_480x0_resize_q75_box.jpg 480w, //blog.xenori.com/2020/09/connect-ultrafine-with-windows/upd2018_hu231bf709c668f3555c0bf39f630ce0d0_56452_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://blog.xenori.com/2020/09/connect-ultrafine-with-windows/upd2018_hu231bf709c668f3555c0bf39f630ce0d0_56452_480x0_resize_q75_box.jpg 480w, https://blog.xenori.com/2020/09/connect-ultrafine-with-windows/upd2018_hu231bf709c668f3555c0bf39f630ce0d0_56452_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="150"

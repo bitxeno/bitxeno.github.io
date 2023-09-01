@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ip on bitxeno's notes</title><link>//blog.xenori.com/tags/ip/</link><description>Recent content in ip on bitxeno's notes</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 09 Jan 2012 07:39:49 +0000</lastBuildDate><atom:link href="//blog.xenori.com/tags/ip/index.xml" rel="self" type="application/rss+xml"/><item><title>获取客户端的真实ip代码改进</title><link>//blog.xenori.com/2012/01/get-client-ip/</link><pubDate>Mon, 09 Jan 2012 07:39:49 +0000</pubDate><guid>//blog.xenori.com/2012/01/get-client-ip/</guid><description>&lt;p>现在系统中常用的获取客户端真实ip的代码如下：&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ip on bitxeno's notes</title><link>https://blog.xenori.com/tags/ip/</link><description>Recent content in ip on bitxeno's notes</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 09 Jan 2012 07:39:49 +0000</lastBuildDate><atom:link href="https://blog.xenori.com/tags/ip/index.xml" rel="self" type="application/rss+xml"/><item><title>获取客户端的真实ip代码改进</title><link>https://blog.xenori.com/2012/01/get-client-ip/</link><pubDate>Mon, 09 Jan 2012 07:39:49 +0000</pubDate><guid>https://blog.xenori.com/2012/01/get-client-ip/</guid><description>&lt;p>现在系统中常用的获取客户端真实ip的代码如下：&lt;/p>
 &lt;pre>&lt;code>// 获取IP地址
 protected string GetIPAddress()
 {
@@ -44,7 +44,7 @@ loading="lazy"
 {3221225984,3221226239}, //{&amp;quot;192.0.2.0&amp;quot;,&amp;quot;192.0.2.255&amp;quot;},
 {3232235520,3232301055}, //{&amp;quot;192.168.0.0&amp;quot;,&amp;quot;192.168.255.255&amp;quot;},
 {4294967040,4294967295}}; //{&amp;quot;255.255.255.0&amp;quot;,&amp;quot;255.255.255.255&amp;quot;}
-&lt;/code>&lt;/pre></description></item><item><title>通过新浪接口抓取ip库</title><link>//blog.xenori.com/2012/01/crawl-sina-ip-data/</link><pubDate>Mon, 09 Jan 2012 07:23:24 +0000</pubDate><guid>//blog.xenori.com/2012/01/crawl-sina-ip-data/</guid><description>&lt;p>新浪有开放ip查询的接口（&lt;a class="link" href="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=json&amp;amp;ip=123.124.2.85" target="_blank" rel="noopener"
+&lt;/code>&lt;/pre></description></item><item><title>通过新浪接口抓取ip库</title><link>https://blog.xenori.com/2012/01/crawl-sina-ip-data/</link><pubDate>Mon, 09 Jan 2012 07:23:24 +0000</pubDate><guid>https://blog.xenori.com/2012/01/crawl-sina-ip-data/</guid><description>&lt;p>新浪有开放ip查询的接口（&lt;a class="link" href="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=json&amp;amp;ip=123.124.2.85" target="_blank" rel="noopener"
 >http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=json&amp;amp;ip=123.124.2.85&lt;/a>），通过不断查询就能抓取到ip信息。不过要遍历所有的ip地址不现实，数据存储和查询都是问题，一般我们面对的是中国的用户，只需要遍历抓取下中国范围的ip信息就行，而且ip地址最后一位的256个ip一般分配到同一地区，所以最后一位只需遍历.0的ip就可以了。
 目前ip4地址已经分配完，中国的ip段可以在以下网址找到：
 &lt;a class="link" href="https://www.countryipblocks.net/e_country_data/CN_range.txt" target="_blank" rel="noopener"
@@ -94,7 +94,7 @@ return string.Format(&amp;quot;{0}.{1}.{2}.0&amp;quot;, p0, p1, p2);
 从新浪接口查询回来的数据，有一部分国家和省市都是空的，还有一部分国家是美国等，这部分数据需要修正下。数据修正可以查询ip138网站，它的数据来源是APNIC，比较新，请求地址如下（&lt;a class="link" href="http://www.ip138.com/ips8.asp?action=2&amp;amp;ip=223.72.166.0" target="_blank" rel="noopener"
 >http://www.ip138.com/ips8.asp?action=2&amp;amp;ip=223.72.166.0&lt;/a>）。把请求回来的内容用正则解析并update到数据库就可以了。&lt;/p>
 &lt;p>&lt;strong>进一步减少数据大小：&lt;/strong>
-新浪接口返回的内容都会带有start和end的ip段，表示ip段中的ip都是属于同一地区。可以把start和end的ip转换为int值，再把int表示的ip段和地区信息保存到另一张表中。查询用户ip所属时，只需把用户ip也转换为int值，再找出int值所在的ip段对应的地区就可以了。&lt;/p></description></item><item><title>门户网站的ip查询接口</title><link>//blog.xenori.com/2011/12/ip-lookup/</link><pubDate>Sun, 25 Dec 2011 06:09:12 +0000</pubDate><guid>//blog.xenori.com/2011/12/ip-lookup/</guid><description>&lt;p>腾讯：&lt;a class="link" href="http://ip.qq.com/cgi-bin/searchip?searchip1=121.236.225.37" target="_blank" rel="noopener"
+新浪接口返回的内容都会带有start和end的ip段，表示ip段中的ip都是属于同一地区。可以把start和end的ip转换为int值，再把int表示的ip段和地区信息保存到另一张表中。查询用户ip所属时，只需把用户ip也转换为int值，再找出int值所在的ip段对应的地区就可以了。&lt;/p></description></item><item><title>门户网站的ip查询接口</title><link>https://blog.xenori.com/2011/12/ip-lookup/</link><pubDate>Sun, 25 Dec 2011 06:09:12 +0000</pubDate><guid>https://blog.xenori.com/2011/12/ip-lookup/</guid><description>&lt;p>腾讯：&lt;a class="link" href="http://ip.qq.com/cgi-bin/searchip?searchip1=121.236.225.37" target="_blank" rel="noopener"
 >http://ip.qq.com/cgi-bin/searchip?searchip1=121.236.225.37&lt;/a>
 现在只能通过解析页面内容到取得&lt;/p>
 &lt;p>新浪：&lt;a class="link" href="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=json&amp;amp;ip=123.124.2.85" target="_blank" rel="noopener"

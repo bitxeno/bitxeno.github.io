@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tvOS on bitxeno's notes</title><link>//blog.xenori.com/tags/tvos/</link><description>Recent content in tvOS on bitxeno's notes</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 14 May 2023 11:27:10 +0800</lastBuildDate><atom:link href="//blog.xenori.com/tags/tvos/index.xml" rel="self" type="application/rss+xml"/><item><title>如何抓取 AppleTV (tvOS) 的 https 网络请求包</title><link>//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/</link><pubDate>Sun, 14 May 2023 11:27:10 +0800</pubDate><guid>//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/</guid><description>&lt;img src="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/cover.webp" alt="Featured image of post 如何抓取 AppleTV (tvOS) 的 https 网络请求包" />&lt;p>AppleTV 无法直接安装证书和修改代理，需要借助添加自定义描述文件的方式来实现，才能对 app 进行抓包。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tvOS on bitxeno's notes</title><link>https://blog.xenori.com/tags/tvos/</link><description>Recent content in tvOS on bitxeno's notes</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 14 May 2023 11:27:10 +0800</lastBuildDate><atom:link href="https://blog.xenori.com/tags/tvos/index.xml" rel="self" type="application/rss+xml"/><item><title>如何抓取 AppleTV (tvOS) 的 https 网络请求包</title><link>https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/</link><pubDate>Sun, 14 May 2023 11:27:10 +0800</pubDate><guid>https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/</guid><description>&lt;img src="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/cover.webp" alt="Featured image of post 如何抓取 AppleTV (tvOS) 的 https 网络请求包" />&lt;p>AppleTV 无法直接安装证书和修改代理，需要借助添加自定义描述文件的方式来实现，才能对 app 进行抓包。&lt;/p>
 &lt;h2 id="准备环境">准备环境&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -16,10 +16,10 @@
 &lt;ol>
 &lt;li>打开 &lt;strong>charles&lt;/strong>，选择菜单&lt;code>Proxy -&amp;gt; SSL Proxying Settings...&lt;/code>，勾选 &lt;code>Enable SSL Proxying&lt;/code>，并添加新的 location，&lt;code>Host&lt;/code>填&lt;code>*&lt;/code>，&lt;code>Port&lt;/code>填&lt;code>443&lt;/code>&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/ssl_proxy.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/ssl_proxy.png"
 width="1408"
 height="1176"
-srcset="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/ssl_proxy_hu9385ff29d123eaef73d64fd1ef688db4_954487_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/ssl_proxy_hu9385ff29d123eaef73d64fd1ef688db4_954487_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/ssl_proxy_hu9385ff29d123eaef73d64fd1ef688db4_954487_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/ssl_proxy_hu9385ff29d123eaef73d64fd1ef688db4_954487_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="ssl_proxy"
 class="gallery-image"
@@ -33,10 +33,10 @@ data-flex-basis="287px"
 &lt;ol>
 &lt;li>打开 &lt;strong>charles&lt;/strong>，选择菜单 &lt;code>Help -&amp;gt; SSL Proxying -&amp;gt; Save Charles Root Certificate&lt;/code>，并选择把证书保存为 &lt;code>.cer&lt;/code> 格式&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/1.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/1.png"
 width="1620"
 height="808"
-srcset="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/1_hudd5d61aff7f94b1e6ad1eb93fdacf997_349536_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/1_hudd5d61aff7f94b1e6ad1eb93fdacf997_349536_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/1_hudd5d61aff7f94b1e6ad1eb93fdacf997_349536_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/1_hudd5d61aff7f94b1e6ad1eb93fdacf997_349536_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="200"
@@ -48,30 +48,30 @@ data-flex-basis="481px"
 &lt;p>点击&lt;code>通用&lt;/code>，在&lt;code>名称&lt;/code>中填一个易于识别的名称，如&lt;code>charles proxy&lt;/code>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/2.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/2.png"
 width="1832"
 height="1220"
-srcset="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/2_hu42109b38b626d0cede6f1f90334f83b5_1241515_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/2_hu42109b38b626d0cede6f1f90334f83b5_1241515_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/2_hu42109b38b626d0cede6f1f90334f83b5_1241515_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/2_hu42109b38b626d0cede6f1f90334f83b5_1241515_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="150"
 data-flex-basis="360px"
 >&lt;/p>
 &lt;p>点击&lt;code>证书&lt;/code>，并把刚刚保存的 charles root 证书上传上去&lt;/p>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/3.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/3.png"
 width="1832"
 height="1220"
-srcset="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/3_hu42109b38b626d0cede6f1f90334f83b5_1206667_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/3_hu42109b38b626d0cede6f1f90334f83b5_1206667_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/3_hu42109b38b626d0cede6f1f90334f83b5_1206667_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/3_hu42109b38b626d0cede6f1f90334f83b5_1206667_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="150"
 data-flex-basis="360px"
 >&lt;/p>
 &lt;p>点击&lt;code>Wi-Fi&lt;/code>，填上 AppleTV 连接的 wifi 信息和 charles 代理信息&lt;/p>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/4.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/4.png"
 width="1832"
 height="1670"
-srcset="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/4_hue2f3b8746f0cc5ecc63a05b2db26589a_1581556_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/4_hue2f3b8746f0cc5ecc63a05b2db26589a_1581556_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/4_hue2f3b8746f0cc5ecc63a05b2db26589a_1581556_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/4_hue2f3b8746f0cc5ecc63a05b2db26589a_1581556_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="109"
@@ -82,18 +82,18 @@ data-flex-basis="263px"
 &lt;ol>
 &lt;li>点击 &lt;strong>Apple configurator&lt;/strong> 主菜单，选择&lt;code>配对设备&lt;/code>，把 &lt;code>AppleTV&lt;/code> 配置并连接上&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/5.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/5.png"
 width="552"
 height="640"
-srcset="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/5_hu83a8338785ad8bbb0a93cad6a53b3d51_139507_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/5_hu83a8338785ad8bbb0a93cad6a53b3d51_139507_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/5_hu83a8338785ad8bbb0a93cad6a53b3d51_139507_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/5_hu83a8338785ad8bbb0a93cad6a53b3d51_139507_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="86"
 data-flex-basis="207px"
->&lt;img src="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/6.png"
+>&lt;img src="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/6.png"
 width="1160"
 height="728"
-srcset="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/6_huebb36bc3bfe44e4cb28ade3e23c31819_649582_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/6_huebb36bc3bfe44e4cb28ade3e23c31819_649582_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/6_huebb36bc3bfe44e4cb28ade3e23c31819_649582_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/6_huebb36bc3bfe44e4cb28ade3e23c31819_649582_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="159"
@@ -102,10 +102,10 @@ data-flex-basis="382px"
 &lt;ol start="2">
 &lt;li>连接上后，&lt;strong>Apple configurator&lt;/strong> 主界面等一会会显示 AppleTV，右键选择 &lt;code>添加 -&amp;gt; 描述文件&lt;/code>，选择刚刚保存的描述文件&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/7.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/7.png"
 width="1972"
 height="1218"
-srcset="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/7_hu347e9fcf991c51822b535619a81cf78b_517017_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/7_hu347e9fcf991c51822b535619a81cf78b_517017_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/7_hu347e9fcf991c51822b535619a81cf78b_517017_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/7_hu347e9fcf991c51822b535619a81cf78b_517017_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="161"
@@ -114,10 +114,10 @@ data-flex-basis="388px"
 &lt;ol start="3">
 &lt;li>等一会 AppleTV 会提示安装描述文件，一路选择安装就可以&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv1.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv1.png"
 width="1244"
 height="702"
-srcset="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv1_hu9e7601cd7d518e2459b2e26fc21fb9bf_123632_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv1_hu9e7601cd7d518e2459b2e26fc21fb9bf_123632_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv1_hu9e7601cd7d518e2459b2e26fc21fb9bf_123632_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv1_hu9e7601cd7d518e2459b2e26fc21fb9bf_123632_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="177"
@@ -126,10 +126,10 @@ data-flex-basis="425px"
 &lt;ol start="4">
 &lt;li>安装完成后，会显示刚刚安装的描述文件&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv2.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv2.png"
 width="1244"
 height="702"
-srcset="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv2_hua1f44c6a77eb76decf16669d3280ca88_100363_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv2_hua1f44c6a77eb76decf16669d3280ca88_100363_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv2_hua1f44c6a77eb76decf16669d3280ca88_100363_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv2_hua1f44c6a77eb76decf16669d3280ca88_100363_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="177"
@@ -138,10 +138,10 @@ data-flex-basis="425px"
 &lt;ol start="5">
 &lt;li>进入 AppleTV 设置，选择&lt;code>通用 -&amp;gt; 关于 -&amp;gt; 证书信任设置&lt;/code>，把&lt;code>charles&lt;/code>证书设置为信任（假如&lt;code>关于&lt;/code>中没出现&lt;code>证书信任设置&lt;/code>，证明描述文件配置有误，导致描述文件没添加成功）&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv3.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv3.png"
 width="1244"
 height="702"
-srcset="//blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv3_hu1cb442105a5193c5aa586fa8d8025ec3_158194_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv3_hu1cb442105a5193c5aa586fa8d8025ec3_158194_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv3_hu1cb442105a5193c5aa586fa8d8025ec3_158194_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/how-capture-appletv-https-network-packet/tv3_hu1cb442105a5193c5aa586fa8d8025ec3_158194_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="177"
@@ -158,7 +158,7 @@ data-flex-basis="425px"
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://github.com/DualSubs/DualSubs/wiki/%E5%9C%A8Apple-TV-%28tvOS%29-%E4%B8%8A%E6%B7%BB%E5%8A%A0%E6%8F%8F%E8%BF%B0%E6%96%87%E4%BB%B6%E6%88%96MitM%E8%AF%81%E4%B9%A6" target="_blank" rel="noopener"
 >在Apple TV (tvOS) 上添加描述文件或MitM证书&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>tvOS 开发实践 - SwiftUI篇</title><link>//blog.xenori.com/2022/06/tvos-development-practice-with-swiftui/</link><pubDate>Tue, 21 Jun 2022 11:58:08 +0800</pubDate><guid>//blog.xenori.com/2022/06/tvos-development-practice-with-swiftui/</guid><description>&lt;img src="//blog.xenori.com/2022/06/tvos-development-practice-with-swiftui/cover.png" alt="Featured image of post tvOS 开发实践 - SwiftUI篇" />&lt;h2 id="焦点非对齐移动">焦点非对齐移动&lt;/h2>
+&lt;/ul></description></item><item><title>tvOS 开发实践 - SwiftUI篇</title><link>https://blog.xenori.com/2022/06/tvos-development-practice-with-swiftui/</link><pubDate>Tue, 21 Jun 2022 11:58:08 +0800</pubDate><guid>https://blog.xenori.com/2022/06/tvos-development-practice-with-swiftui/</guid><description>&lt;img src="https://blog.xenori.com/2022/06/tvos-development-practice-with-swiftui/cover.png" alt="Featured image of post tvOS 开发实践 - SwiftUI篇" />&lt;h2 id="焦点非对齐移动">焦点非对齐移动&lt;/h2>
 &lt;p>默认tvOS焦点移动是需要移动方向上有能获取焦点的button，假如button是左右靠边对齐的，就移动不上去。需要使用&lt;code>focusSetion&lt;/code>把button所在的整行范围变成可焦点识别的，才能自动移动到靠边的button上。&lt;/p>
 &lt;p>示例：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-swift" data-lang="swift">&lt;span class="line">&lt;span class="cl">&lt;span class="n">VStack&lt;/span> &lt;span class="p">{&lt;/span>

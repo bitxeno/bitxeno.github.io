@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>wsa on bitxeno's notes</title><link>//blog.xenori.com/tags/wsa/</link><description>Recent content in wsa on bitxeno's notes</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 15 May 2023 15:27:10 +0800</lastBuildDate><atom:link href="//blog.xenori.com/tags/wsa/index.xml" rel="self" type="application/rss+xml"/><item><title>通过 WSA 抓取 android 的 https 网络请求包</title><link>//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/</link><pubDate>Mon, 15 May 2023 15:27:10 +0800</pubDate><guid>//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/</guid><description>&lt;img src="//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/cover.jpeg" alt="Featured image of post 通过 WSA 抓取 android 的 https 网络请求包" />&lt;p>android 9 以上版本，app 不再信任用户安装的证书，只能通过 root 手机把证书移动到 system 分区才能实现抓包。一般日常使用手机为了安全是不可能 root 的，这里通过 Windows 的 WSA 来实现抓包。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>wsa on bitxeno's notes</title><link>https://blog.xenori.com/tags/wsa/</link><description>Recent content in wsa on bitxeno's notes</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 15 May 2023 15:27:10 +0800</lastBuildDate><atom:link href="https://blog.xenori.com/tags/wsa/index.xml" rel="self" type="application/rss+xml"/><item><title>通过 WSA 抓取 android 的 https 网络请求包</title><link>https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/</link><pubDate>Mon, 15 May 2023 15:27:10 +0800</pubDate><guid>https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/</guid><description>&lt;img src="https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/cover.jpeg" alt="Featured image of post 通过 WSA 抓取 android 的 https 网络请求包" />&lt;p>android 9 以上版本，app 不再信任用户安装的证书，只能通过 root 手机把证书移动到 system 分区才能实现抓包。一般日常使用手机为了安全是不可能 root 的，这里通过 Windows 的 WSA 来实现抓包。&lt;/p>
 &lt;h2 id="准备环境">准备环境&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -9,10 +9,10 @@
 &lt;p>安装后，开始菜单中搜索 &lt;code>android&lt;/code>，找到 WSA 设置应用并打开，选择 &lt;code>开发人员&lt;/code>，并打开&lt;code>开发人员模式&lt;/code>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/1.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/1.png"
 width="1084"
 height="718"
-srcset="//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/1_hub311dd2faff923cd2dc66f0ae9a4776d_92901_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/1_hub311dd2faff923cd2dc66f0ae9a4776d_92901_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/1_hub311dd2faff923cd2dc66f0ae9a4776d_92901_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/1_hub311dd2faff923cd2dc66f0ae9a4776d_92901_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="150"
@@ -43,10 +43,10 @@ data-flex-basis="362px"
 &lt;p>点击&lt;strong>WSA工具箱&lt;/strong>首页的&lt;code>Android设置&lt;/code>，选择&lt;code>安全-&amp;gt;更多安全设置-&amp;gt;加密与凭据-&amp;gt;安装证书&lt;/code>菜单，选择并安装&lt;code>Download&lt;/code>目录的&lt;code>charles&lt;/code>证书&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/2.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/2.png"
 width="1390"
 height="864"
-srcset="//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/2_huc11281a385f0323f7fb22346342b05c5_278663_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/2_huc11281a385f0323f7fb22346342b05c5_278663_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/2_huc11281a385f0323f7fb22346342b05c5_278663_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/2_huc11281a385f0323f7fb22346342b05c5_278663_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="160"
@@ -55,10 +55,10 @@ data-flex-basis="386px"
 &lt;ol start="4">
 &lt;li>证书安装成功后，正常在&lt;code>加密与凭据-&amp;gt;信任的凭据-&amp;gt;用户&lt;/code>项中能看到已安装的证书&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/3.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/3.png"
 width="582"
 height="688"
-srcset="//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/3_hu6752eb6c708844501a8d4a854f8e7790_62810_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/3_hu6752eb6c708844501a8d4a854f8e7790_62810_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/3_hu6752eb6c708844501a8d4a854f8e7790_62810_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/3_hu6752eb6c708844501a8d4a854f8e7790_62810_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="84"
@@ -74,10 +74,10 @@ data-flex-basis="203px"
 &lt;p>打开 &lt;strong>Magisk&lt;/strong> app，点击&lt;code>模块 -&amp;gt; 从本地安装&lt;/code>，选择刚刚上传的&lt;code>Download&lt;/code>目录下的&lt;code>AlwaysTrustUserCerts&lt;/code>压缩包&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/4.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/4.png"
 width="544"
 height="718"
-srcset="//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/4_hu62ae5ce2897a65b7a4027a8ee750a16e_45040_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/4_hu62ae5ce2897a65b7a4027a8ee750a16e_45040_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/4_hu62ae5ce2897a65b7a4027a8ee750a16e_45040_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/4_hu62ae5ce2897a65b7a4027a8ee750a16e_45040_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="75"
@@ -91,10 +91,10 @@ data-flex-basis="181px"
 &lt;p>重启后正常能在&lt;code>加密与凭据-&amp;gt;信任的凭据-&amp;gt;系统&lt;/code>中，看到&lt;code>charles&lt;/code>证书&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/5.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/5.png"
 width="544"
 height="696"
-srcset="//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/5_hub5c871cd5d01a8af30fa5218ac6cbbd2_106297_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/5_hub5c871cd5d01a8af30fa5218ac6cbbd2_106297_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/5_hub5c871cd5d01a8af30fa5218ac6cbbd2_106297_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/5_hub5c871cd5d01a8af30fa5218ac6cbbd2_106297_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="78"
@@ -104,10 +104,10 @@ data-flex-basis="187px"
 &lt;ol>
 &lt;li>打开 &lt;strong>charles&lt;/strong>，选择菜单&lt;code>Proxy -&amp;gt; SSL Proxying Settings...&lt;/code>，勾选 &lt;code>Enable SSL Proxying&lt;/code>，并添加新的 location，&lt;code>Host&lt;/code>填&lt;code>*&lt;/code>，&lt;code>Port&lt;/code>填&lt;code>443&lt;/code>&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/6.png"
+&lt;p>&lt;img src="https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/6.png"
 width="1620"
 height="808"
-srcset="//blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/6_hudd5d61aff7f94b1e6ad1eb93fdacf997_349536_480x0_resize_box_3.png 480w, //blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/6_hudd5d61aff7f94b1e6ad1eb93fdacf997_349536_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/6_hudd5d61aff7f94b1e6ad1eb93fdacf997_349536_480x0_resize_box_3.png 480w, https://blog.xenori.com/2023/05/capture-android-https-network-packet-with-wsa/6_hudd5d61aff7f94b1e6ad1eb93fdacf997_349536_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="200"
